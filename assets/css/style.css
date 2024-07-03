@@ -35,7 +35,6 @@ body {
 
 #movie {
   background: #2d0e63;
-  height: 300px;
   position: relative;
   z-index: 2;
 }
@@ -403,6 +402,133 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), inset 0 0 0 2px rgb(45, 14, 99);
   transform: translateY(-100px) rotate(0deg) scale(2);
   transition-duration: 0ms;
+}
+
+/* movie */
+.movie {
+  padding: 30px 0;
+  position: relative;
+}
+.movie .movie_title {
+  margin-bottom: 30px;
+}
+.movie .movie_title ul {
+  display: flex;
+  justify-content: center;
+}
+.movie .movie_title ul li {
+  position: relative;
+}
+.movie .movie_title ul li::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 11px;
+  width: 2px;
+  height: 16px;
+  background: #999;
+}
+.movie .movie_title ul li:first-child::before {
+  width: 0;
+  height: 0;
+}
+.movie .movie_title ul li.active a {
+  color: #fff;
+}
+.movie .movie_title ul li a {
+  font-size: 22px;
+  color: #666;
+  font-weight: 700;
+  padding: 0 15px;
+}
+.movie .movie_more {
+  position: absolute;
+  right: 0;
+  top: 36px;
+}
+.movie .movie_more a {
+  font-size: 16px;
+  color: #e4e4e4;
+}
+.movie .movie_more a span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../img/icon.png);
+  background-position: -136px -3px;
+  vertical-align: -4px;
+  margin-left: 5px;
+}
+.movie .movie_chart > div > div > div {
+  display: inline-block;
+  width: 232px;
+  margin-right: 40px;
+}
+.movie .movie_chart > div > div > div:last-child {
+  margin-right: 0;
+}
+.movie .movie_chart > div > div > div .poster {
+  position: relative;
+}
+.movie .movie_chart > div > div > div .poster img {
+  display: block;
+  height: 337px;
+  border-radius: 5px;
+}
+.movie .movie_chart > div > div > div .poster .rank {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #38116a;
+  text-align: center;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+.movie .movie_chart > div > div > div .poster .rank strong {
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.movie .movie_chart > div > div > div .infor h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 8px 0;
+}
+.movie .movie_chart > div > div > div .infor h3 strong {
+  margin-left: 5px;
+}
+.movie .movie_chart > div > div > div .infor h3 span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(../img/icon.png);
+  vertical-align: -1px;
+  background-color: #222;
+}
+.movie .movie_chart > div > div > div .infor h3 span.all {
+  background-position: -69px -3px;
+}
+.movie .movie_chart > div > div > div .infor h3 span.a12 {
+  background-position: -3px -3px;
+}
+.movie .movie_chart > div > div > div .infor h3 span.a15 {
+  background-position: -25px -3px;
+}
+.movie .movie_chart > div > div > div .infor h3 span.a19 {
+  background-position: -47px -3px;
+}
+.movie .movie_chart > div > div > div .infor .infor_btn a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #d9481d;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
 }
 
 /* event */
