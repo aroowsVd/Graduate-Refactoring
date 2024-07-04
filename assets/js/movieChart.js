@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     autoplay: {
       delay: 3000,
+      disableOnInteraction: false,
     },
     breakpoints: {
       600: {

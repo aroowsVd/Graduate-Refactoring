@@ -39,6 +39,22 @@ body {
   z-index: 2;
 }
 
+#guide {
+  background: #140037;
+}
+
+#rental {
+  margin-top: 80px;
+}
+
+#food {
+  margin-top: 230px;
+}
+
+#event {
+  margin: 100px 0;
+}
+
 #footer {
   background: #211f1f;
 }
@@ -531,10 +547,271 @@ body {
   border-radius: 5px;
 }
 
-/* event */
-.event {
-  padding: 100px 0;
+/* guide */
+.guide {
+  padding: 40px 0;
+  text-align: center;
 }
+.guide h2 {
+  font-size: 20px;
+  color: #d9481d;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.guide .guide_list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 12px;
+}
+.guide .guide_list ul li {
+  flex: 1 1 calc(25% - 12px);
+  position: relative;
+}
+.guide .guide_list ul li::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%; /* 정사각형을 유지 */
+}
+.guide .guide_list ul li a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.guide .guide_list ul li a.list1 {
+  background: url(../img/img002.png);
+  background-size: cover;
+}
+.guide .guide_list ul li a.list1:hover {
+  background: url(../img/img001.png) no-repeat;
+  background-size: cover;
+}
+.guide .guide_list ul li a.list2 {
+  background: url(../img/img004.png);
+  background-size: cover;
+}
+.guide .guide_list ul li a.list2:hover {
+  background: url(../img/img003.png) no-repeat;
+  background-size: cover;
+}
+.guide .guide_list ul li a.list3 {
+  background: url(../img/img006.png);
+  background-size: cover;
+}
+.guide .guide_list ul li a.list3:hover {
+  background: url(../img/img005.png) no-repeat;
+  background-size: cover;
+}
+.guide .guide_list ul li a.list4 {
+  background: url(../img/img008.png);
+  background-size: cover;
+}
+.guide .guide_list ul li a.list4:hover {
+  background: url(../img/img007.png) no-repeat;
+  background-size: cover;
+}
+
+/* rental */
+.rental {
+  padding-top: 40px;
+  text-align: center;
+  background: url(../img/rental_back.png) no-repeat center;
+  background-size: cover;
+}
+.rental > h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+.rental > p {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 37px;
+}
+.rental .rental_service {
+  margin: 30px 10% 0 10%;
+}
+.rental .rental_service ul {
+  display: flex;
+  justify-content: center;
+}
+.rental .rental_service ul li {
+  flex: 1 1 33.33%;
+  margin-bottom: -150px;
+  border: 1px solid #707070;
+  position: relative;
+  margin-right: -4px;
+  overflow: hidden;
+}
+.rental .rental_service ul li:hover {
+  background-color: #07090c;
+}
+.rental .rental_service ul li:hover img {
+  animation: rentalAni 0.45s linear forwards;
+  animation-iteration-count: 1;
+}
+.rental .rental_service ul li:hover figcaption {
+  animation: rentalFig 0.4s ease-out;
+  opacity: 1;
+}
+.rental .rental_service ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.rental .rental_service ul li figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  opacity: 0;
+  color: #fff;
+  z-index: 1;
+}
+.rental .rental_service ul li figcaption .rental_figWrap {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+.rental .rental_service ul li figcaption .rental_figWrap h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+.rental .rental_service ul li figcaption .rental_figWrap p {
+  font-size: 14px;
+}
+.rental .rental_service ul li #bars {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  width: 40px;
+  height: 30px;
+  margin: -30px 0 0 -20px;
+}
+.rental .rental_service ul li #bars .bar {
+  position: absolute;
+  bottom: 1px;
+  width: 3px;
+  height: 3px;
+  background: #666;
+  animation: sound linear infinite alternate;
+}
+.rental .rental_service ul li #bars .bar:nth-child(1) {
+  left: 1px;
+  animation-duration: 474ms;
+}
+.rental .rental_service ul li #bars .bar:nth-child(2) {
+  left: 5px;
+  animation-duration: 433ms;
+}
+.rental .rental_service ul li #bars .bar:nth-child(3) {
+  left: 9px;
+  animation-duration: 407ms;
+}
+.rental .rental_service ul li #bars .bar:nth-child(4) {
+  left: 13px;
+  animation-duration: 458ms;
+}
+.rental .rental_service ul li #bars .bar:nth-child(5) {
+  left: 17px;
+  animation-duration: 400ms;
+}
+.rental .rental_service ul li #bars .bar:nth-child(6) {
+  left: 21px;
+  animation-duration: 427ms;
+}
+.rental .rental_service ul li #bars .bar:nth-child(7) {
+  left: 25px;
+  animation-duration: 441ms;
+}
+.rental .rental_service ul li #bars .bar:nth-child(8) {
+  left: 29px;
+  animation-duration: 419ms;
+}
+.rental .rental_service ul li #bars .bar:nth-child(9) {
+  left: 33px;
+  animation-duration: 487ms;
+}
+.rental .rental_service ul li #bars .bar:nth-child(10) {
+  left: 37px;
+  animation-duration: 442ms;
+}
+@keyframes rentalAni {
+  50% {
+    transform: scale(0.8) translateY(0%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.8) translateY(150%);
+    opacity: 0.5;
+  }
+}
+@keyframes rentalFig {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes sound {
+  0% {
+    opacity: 0.35;
+    height: 3px;
+  }
+  100% {
+    opacity: 1;
+    height: 30px;
+  }
+}
+/* food */
+.food .food_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+.food .food_header h2 {
+  font-size: 30px;
+}
+.food .food_header a {
+  font-size: 16px;
+  color: #666;
+}
+.food .food_header a span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: -4px;
+  margin-left: 5px;
+  background: url(../img/icon.png);
+  background-position: -105px -3px;
+}
+.food .food_chart {
+  overflow-x: hidden;
+}
+.food .food_chart .swiper-slide img {
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* event */
 .event img {
   display: block;
   border-radius: 4px;
@@ -703,5 +980,38 @@ body {
   }
   .nav > ul > li ul a {
     font-size: 12px;
+  }
+  .choice h2 {
+    font-size: 25px;
+  }
+  .choice > p {
+    font-size: 16px;
+  }
+  .choice .choice_btn {
+    font-size: 16px;
+  }
+  .guide_list ul {
+    gap: 12px !important;
+  }
+  .guide_list ul li {
+    flex: 1 1 calc(50% - 12px) !important;
+  }
+  .rental > h2 {
+    font-size: 25px;
+  }
+  .rental > p {
+    font-size: 16px;
+  }
+  .rental .rental_figWrap h3 {
+    font-size: 15px !important;
+  }
+  .rental .rental_figWrap p {
+    font-size: 12px !important;
+  }
+  .event h2 {
+    font-size: 25px !important;
+  }
+  .food h2 {
+    font-size: 25px !important;
   }
 }
