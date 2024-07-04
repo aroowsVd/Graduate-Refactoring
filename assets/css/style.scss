@@ -36,6 +36,18 @@ body {
   position: relative;
   z-index: 2;
 }
+#guide {
+  background: #140037;
+}
+#rental {
+  margin-top: 80px;
+}
+#food {
+  margin-top: 230px;
+}
+#event {
+  margin: 100px 0;
+}
 #footer {
   background: #211f1f;
 }
@@ -557,10 +569,323 @@ $status: (login, logout, member, mypage);
   }
 }
 
+/* guide */
+.guide {
+  padding: 40px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 20px;
+    color: #d9481d;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .guide_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 12px;
+
+    li {
+      flex: 1 1 calc(25% - 12px);
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        padding-bottom: 100%; /* 정사각형을 유지 */
+      }
+
+      a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+
+        &.list1 {
+          background: url(../img/img002.png);
+          background-size: cover;
+
+          &:hover {
+            background: url(../img/img001.png) no-repeat;
+            background-size: cover;
+          }
+        }
+        &.list2 {
+          background: url(../img/img004.png);
+          background-size: cover;
+          &:hover {
+            background: url(../img/img003.png) no-repeat;
+            background-size: cover;
+          }
+        }
+        &.list3 {
+          background: url(../img/img006.png);
+          background-size: cover;
+          &:hover {
+            background: url(../img/img005.png) no-repeat;
+            background-size: cover;
+          }
+        }
+        &.list4 {
+          background: url(../img/img008.png);
+          background-size: cover;
+          &:hover {
+            background: url(../img/img007.png) no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* rental */
+.rental {
+  padding-top: 40px;
+  text-align: center;
+  background: url(../img/rental_back.png) no-repeat center;
+  background-size: cover;
+
+  > h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  > p {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 37px;
+  }
+
+  .rental_service {
+    margin: 30px 10% 0 10%;
+
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        flex: 1 1 33.33%;
+        margin-bottom: -150px;
+        border: 1px solid #707070;
+        position: relative;
+        margin-right: -4px;
+        overflow: hidden;
+
+        &:hover {
+          background-color: #07090c;
+        }
+
+        &:hover img {
+          -webkit-animation: rentalAni 0.45s linear forwards;
+          animation: rentalAni 0.45s linear forwards;
+          -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+        }
+
+        &:hover figcaption {
+          animation: rentalFig 0.4s ease-out;
+          opacity: 1;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        figcaption {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          text-align: left;
+          opacity: 0;
+          color: #fff;
+
+          z-index: 1;
+
+          .rental_figWrap {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 20px;
+
+            h3 {
+              font-size: 17px;
+              margin-bottom: 6px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+
+        #bars {
+          position: absolute;
+          left: 50%;
+          top: 90%;
+          width: 40px;
+          height: 30px;
+          margin: -30px 0 0 -20px;
+
+          .bar {
+            position: absolute;
+            bottom: 1px;
+            width: 3px;
+            height: 3px;
+            background: #666;
+            animation: sound linear infinite alternate;
+
+            &:nth-child(1) {
+              left: 1px;
+              animation-duration: 474ms;
+            }
+            &:nth-child(2) {
+              left: 5px;
+              animation-duration: 433ms;
+            }
+            &:nth-child(3) {
+              left: 9px;
+              animation-duration: 407ms;
+            }
+            &:nth-child(4) {
+              left: 13px;
+              animation-duration: 458ms;
+            }
+            &:nth-child(5) {
+              left: 17px;
+              animation-duration: 400ms;
+            }
+            &:nth-child(6) {
+              left: 21px;
+              animation-duration: 427ms;
+            }
+            &:nth-child(7) {
+              left: 25px;
+              animation-duration: 441ms;
+            }
+            &:nth-child(8) {
+              left: 29px;
+              animation-duration: 419ms;
+            }
+            &:nth-child(9) {
+              left: 33px;
+              animation-duration: 487ms;
+            }
+            &:nth-child(10) {
+              left: 37px;
+              animation-duration: 442ms;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//rental img animations
+@-webkit-keyframes rentalAni {
+  50% {
+    -webkit-transform: scale(0.8) translateY(0%);
+    transform: scale(0.8) translateY(0%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateY(150%);
+    transform: scale(0.8) translateY(150%);
+    opacity: 0.5;
+  }
+}
+@keyframes rentalAni {
+  50% {
+    -webkit-transform: scale(0.8) translateY(0%);
+    transform: scale(0.8) translateY(0%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateY(150%);
+    transform: scale(0.8) translateY(150%);
+    opacity: 0.5;
+  }
+}
+//rental figcaption animations
+@keyframes rentalFig {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+//rental sound bar animation {
+@keyframes sound {
+  0% {
+    opacity: 0.35;
+    height: 3px;
+  }
+  100% {
+    opacity: 1;
+    height: 30px;
+  }
+}
+
+/* food */
+.food {
+  .food_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    a {
+      font-size: 16px;
+      color: #666;
+
+      span {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        vertical-align: -4px;
+        margin-left: 5px;
+
+        background: url(../img/icon.png);
+        background-position: -105px -3px;
+      }
+    }
+  }
+
+  .food_chart {
+    overflow-x: hidden;
+
+    .swiper-slide {
+      img {
+        border-radius: 20px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
 /* event */
 .event {
-  padding: 100px 0;
-
   img {
     display: block;
     border-radius: 4px;
@@ -763,6 +1088,56 @@ $status: (login, logout, member, mypage);
       ul a {
         font-size: 12px;
       }
+    }
+  }
+
+  .choice {
+    h2 {
+      font-size: 25px;
+    }
+    > p {
+      font-size: 16px;
+    }
+    .choice_btn {
+      font-size: 16px;
+    }
+  }
+
+  .guide_list ul {
+    gap: 12px !important;
+
+    li {
+      flex: 1 1 calc(50% - 12px) !important;
+    }
+  }
+
+  .rental {
+    > h2 {
+      font-size: 25px;
+    }
+    > p {
+      font-size: 16px;
+    }
+
+    .rental_figWrap {
+      h3 {
+        font-size: 15px !important;
+      }
+      p {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  .event {
+    h2 {
+      font-size: 25px !important;
+    }
+  }
+
+  .food {
+    h2 {
+      font-size: 25px !important;
     }
   }
 }
