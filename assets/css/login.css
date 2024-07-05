@@ -1,0 +1,117 @@
+.login {
+  width: 410px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.login .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.login .logo a {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+.login h2 {
+  font-size: 32px;
+  color: #3a0f77;
+  font-weight: bold;
+  line-height: 1;
+  border-bottom: 2px solid #3a0f77;
+  padding-bottom: 20px;
+}
+.login .log_main {
+  padding: 40px 0 33px 0;
+}
+.login .log_main li {
+  padding-bottom: 12px;
+  text-align: left;
+}
+.login .log_main li input {
+  width: 100%;
+  height: 46px;
+  text-indent: 16px;
+  box-sizing: border-box;
+}
+.login .log_main li input::-moz-placeholder {
+  font-size: 16px;
+  color: #9fa19f;
+}
+.login .log_main li input::placeholder {
+  font-size: 16px;
+  color: #9fa19f;
+}
+.login .log_main li input[type=checkbox] {
+  position: absolute;
+  left: -3000%;
+}
+.login .log_main li input[type=checkbox] + label {
+  height: 36px;
+  line-height: 36px;
+}
+.login .log_main li input[type=checkbox] + label::before {
+  content: "";
+  margin: 0 10px 0 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #666;
+  background: #fff;
+  display: inline-block;
+  vertical-align: -5px;
+}
+.login .log_main li input[type=checkbox]:checked + label:before {
+  background: url(../icons/check.png) no-repeat #333;
+  border-color: #333;
+}
+.login .log_main li button {
+  width: 100%;
+  height: 56px;
+  background: #3a0f77;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.login .log_sub {
+  display: flex;
+  justify-content: center;
+}
+.login .log_sub li {
+  position: relative;
+  padding: 0 18px;
+}
+.login .log_sub li ~ li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  height: 14px;
+  width: 1px;
+  background: #111;
+  transform: rotate(25deg);
+}
+.login .log_sub li a {
+  font-size: 14px;
+  color: #111;
+}
+.login > a.none {
+  position: relative;
+  font-size: 13px;
+  color: #666;
+  display: inline-block;
+  margin-top: 14px;
+}
+.login > a.none::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: #666;
+}

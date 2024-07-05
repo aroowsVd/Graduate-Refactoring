@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Drive In Car." />
+    <meta name="keywords" content="DIC, 영화, 최신영화, 영화관, 졸업작품" />
+    <title>자동차 극장 DIC</title>
+
+    <!-- CSS 스타일 -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="assets/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="96x96"
+      href="assets/icons/favicon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="192x192"
+      href="assets/icons/apple-icon.png"
+    />
+
+    <!-- 웹 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form name="login" action="" method="post">
+      <section class="login">
+        <div class="logo">
+          <a class="logo" href="index.html"
+            ><img src="assets/img/Logo(300px).png" alt="홈으로 바로가기"
+          /></a>
+        </div>
+        <h2>로그인</h2>
+        <ul class="log_main">
+          <li>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="이메일"
+              title="이메일 입력"
+              required
+            />
+          </li>
+          <li>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="비밀번호 입력"
+              title="비밀번호 입력"
+              required
+            />
+          </li>
+          <li>
+            <input type="checkbox" id="chk_id" /><label for="chk_id"
+              >이메일 저장</label
+            >
+          </li>
+          <li><button type="submit">로그인</button></li>
+        </ul>
+        <ul class="log_sub">
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">비밀번호 찾기</a></li>
+        </ul>
+        <a class="none" href="#">비회원 예매확인</a>
+      </section>
+    </form>
+  </body>
+</html>

@@ -990,6 +990,9 @@ body {
   .choice .choice_btn {
     font-size: 16px;
   }
+  .choice .card {
+    margin: 17px -40px !important;
+  }
   .guide_list ul {
     gap: 12px !important;
   }
