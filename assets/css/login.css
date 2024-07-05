@@ -115,3 +115,9 @@
   height: 1px;
   background: #666;
 }
+
+@media (max-width: 410px) {
+  .login {
+    width: 90%;
+  }
+}
