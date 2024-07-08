@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Drive In Car." />
+    <meta name="keywords" content="DIC, 영화, 최신영화, 영화관, 졸업작품" />
+    <title>자동차 극장 DIC</title>
+
+    <!-- CSS 스타일 -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/member.css" />
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/icons/favicon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/icons/apple-icon.png"
+    />
+  </head>
+  <body>
+    <form name="newMem" method="post" action="member4.html">
+      <section class="member02">
+        <div class="container">
+          <div class="row">
+            <div class="logo_wrap">
+              <a class="logo" href="index.html"
+                ><img src="assets/img/Logo(300px).png" alt="홈으로 바로가기"
+              /></a>
+            </div>
+            <h2>회원가입</h2>
+            <div class="contents">
+              <ol class="step">
+                <li>
+                  STEP1
+                  <div>회원가입</div>
+                </li>
+                <li class="on">
+                  STEP2
+                  <div>약관동의</div>
+                </li>
+                <li>
+                  STEP3
+                  <div>회원정보입력</div>
+                </li>
+                <li>
+                  STEP4
+                  <div>가입완료</div>
+                </li>
+              </ol>
+
+              <!-- 회원정보 -->
+              <h3 class="h3">회원정보</h3>
+              <table class="type01">
+                <tbody>
+                  <tr>
+                    <th><span>필수입력</span>이름</th>
+                    <td>
+                      <input type="text" name="name" style="width: 300px" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span>필수입력</span>성별</th>
+                    <td class="select">
+                      <input type="radio" id="M" name="sex" /><label for="M"
+                        >남성</label
+                      >
+                      <input type="radio" id="W" name="sex" /><label for="W"
+                        >여성</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span>필수입력</span>생년월일</th>
+                    <td>
+                      <input
+                        type="text"
+                        name="birthYear"
+                        style="width: 80px"
+                      />&nbsp;년&nbsp;&nbsp;
+                      <input
+                        type="text"
+                        name="birthMonth"
+                        style="width: 60px"
+                      />&nbsp;월&nbsp;&nbsp;
+                      <input
+                        type="text"
+                        name="birthDay"
+                        style="width: 60px"
+                      />&nbsp;일
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span>필수입력</span>주민등록번호</th>
+                    <td>
+                      <input type="text" nmae="joomin1" />
+                      -
+                      <input type="text" nmae="joomin2" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span>필수입력</span>아이디</th>
+                    <td>
+                      <input type="text" name="id" style="width: 300px" />
+                      <a href="javascript:checkID()" class="btn_type3"
+                        >아이디 중복확인</a
+                      >
+                      <span class="info"
+                        >아이디 입력 후'아이디 중복확인' 버튼을
+                        클릭해주세요</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span>필수입력</span>비밀번호</th>
+                    <td>
+                      <input
+                        type="password"
+                        name="password"
+                        id="pw"
+                        style="width: 300px"
+                      />
+                      <span class="info"
+                        >비밀번호는 4~10자리로 입력해주시기 바랍니다.</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span>필수입력</span>비밀번호 확인</th>
+                    <td>
+                      <input
+                        type="password"
+                        name="password2"
+                        id="pwCheck"
+                        onchange="isSame()"
+                        style="width: 300px"
+                      /><span id="same"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span>필수입력</span>주소</th>
+                    <td>
+                      <div>
+                        <input
+                          type="text"
+                          name="address1"
+                          id="address1"
+                          style="width: 210px"
+                          placeholder="우편번호"
+                          readonly
+                        /><input
+                          type="button"
+                          class="btn_type3"
+                          onclick="execPostCode()"
+                          value="우편번호 검색"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          name="address2"
+                          id="address2"
+                          style="width: 300px"
+                          placeholder="도로명주소"
+                          readonly
+                        />
+                        <input
+                          type="text"
+                          name="address3"
+                          id="address3"
+                          style="width: 300px"
+                          placeholder="상세주소"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span>필수입력</span>이메일 주소</th>
+                    <td>
+                      <input
+                        type="text"
+                        name="email1"
+                        id="email1"
+                        style="width: 210px"
+                      />
+                      @
+                      <input
+                        type="text"
+                        name="email2"
+                        id="email2"
+                        style="width: 194px"
+                      />
+                      <select name="selectEmail" id="selectEmail">
+                        <option value="0" selected="selected">직접입력</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="hanmail.com">hanmail.com</option>
+                        <option value="nate.com">nate.com</option>
+                        <option value="yahoo.com">yahoo.com</option>
+                      </select>
+                      <a href="#" class="window btn_type3">본인인증</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>전화번호</th>
+                    <td>
+                      <select name="tel1">
+                        <option>032</option>
+                        <option>031</option>
+                        <option>042</option>
+                        <option>041</option>
+                      </select>
+                      <input type="tel" name="tel2" style="width: 210px" />
+                      <input type="tel" name="tel3" style="width: 210px" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><span>필수입력</span>휴대폰번호</th>
+                    <td>
+                      <select name="phone1">
+                        <option>010</option>
+                      </select>
+                      <input type="tel" name="phone2" style="width: 210px" />
+                      <input type="tel" name="phone3" style="width: 210px" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>
