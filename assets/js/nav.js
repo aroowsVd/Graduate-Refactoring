@@ -33,3 +33,21 @@ function changeLogo() {
     logo.alt = "페이지 로고";
   }
 }
+
+//mobile menu
+const menuWrap = document.querySelector(".mobile_menu_wrap");
+const menu = document.querySelector(".mobile_menu");
+const closeBtn = document.querySelector(".m_menu_close");
+const openBtn = document.querySelector(".menu_btn");
+
+closeBtn.addEventListener("click", function () {
+  menuWrap.classList.remove("show");
+});
+openBtn.addEventListener("click", function () {
+  menuWrap.classList.add("show");
+});
+menuWrap.addEventListener("click", function (event) {
+  if (event.target === menuWrap) {
+    menuWrap.classList.remove("show");
+  }
+});
