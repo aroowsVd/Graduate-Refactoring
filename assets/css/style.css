@@ -241,8 +241,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .banner_wrap > div .hero-image.hi-1 {
   background-image: url("../img/main_banner01.jpg");
@@ -652,7 +651,9 @@ body {
   background-color: #07090c;
 }
 .rental .rental_service ul li:hover img {
+  -webkit-animation: rentalAni 0.45s linear forwards;
   animation: rentalAni 0.45s linear forwards;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
 .rental .rental_service ul li:hover figcaption {
@@ -662,8 +663,7 @@ body {
 .rental .rental_service ul li img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .rental .rental_service ul li figcaption {
   position: absolute;
@@ -746,12 +746,27 @@ body {
   left: 37px;
   animation-duration: 442ms;
 }
-@keyframes rentalAni {
+
+@-webkit-keyframes rentalAni {
   50% {
+    -webkit-transform: scale(0.8) translateY(0%);
     transform: scale(0.8) translateY(0%);
     opacity: 0.5;
   }
   100% {
+    -webkit-transform: scale(0.8) translateY(150%);
+    transform: scale(0.8) translateY(150%);
+    opacity: 0.5;
+  }
+}
+@keyframes rentalAni {
+  50% {
+    -webkit-transform: scale(0.8) translateY(0%);
+    transform: scale(0.8) translateY(0%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateY(150%);
     transform: scale(0.8) translateY(150%);
     opacity: 0.5;
   }
@@ -807,8 +822,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* event */
