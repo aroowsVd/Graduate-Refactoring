@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* colors */
 /* 레이아웃 */
 body {
   width: 100%;
@@ -78,7 +79,7 @@ body {
   justify-content: space-between;
 }
 .nav h1 {
-  flex-shrink: 0;
+  flex-shrink: 1;
   padding: 10px 0;
   display: flex;
   align-items: center;
@@ -103,7 +104,7 @@ body {
   display: block;
   width: 130px;
   height: 55px;
-  font-size: 17px;
+  font-size: 1.31em;
   font-weight: 700;
   line-height: 55px;
 }
@@ -116,7 +117,7 @@ body {
 }
 .nav > ul > li ul a {
   position: relative;
-  font-size: 14px;
+  font-size: 1.08em;
   font-weight: 500;
 }
 .nav > ul > li ul a:after {
@@ -139,63 +140,133 @@ body {
 .nav h2 {
   display: flex;
 }
+.nav .nav_icon {
+  padding-top: 20px;
+}
 .nav .nav_icon a.login_ico {
-  height: 50px;
+  width: 50px;
+  height: 36px;
   background: url(../icons/loginIcon.png);
   background-repeat: no-repeat;
-  background-position: center;
-  margin: 10px;
+  background-position: center top;
   display: inline-block;
   position: relative;
 }
 .nav .nav_icon a.login_ico > span {
   display: inline-block;
-  padding: 45px 0;
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  padding: 35px 0;
 }
 .nav .nav_icon a.logout_ico {
-  height: 50px;
+  width: 50px;
+  height: 36px;
   background: url(../icons/logoutIcon.png);
   background-repeat: no-repeat;
-  background-position: center;
-  margin: 10px;
+  background-position: center top;
   display: inline-block;
   position: relative;
 }
 .nav .nav_icon a.logout_ico > span {
   display: inline-block;
-  padding: 45px 0;
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  padding: 35px 0;
 }
 .nav .nav_icon a.member_ico {
-  height: 50px;
+  width: 50px;
+  height: 36px;
   background: url(../icons/memberIcon.png);
   background-repeat: no-repeat;
-  background-position: center;
-  margin: 10px;
+  background-position: center top;
   display: inline-block;
   position: relative;
 }
 .nav .nav_icon a.member_ico > span {
   display: inline-block;
-  padding: 45px 0;
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  padding: 35px 0;
 }
 .nav .nav_icon a.mypage_ico {
-  height: 50px;
+  width: 50px;
+  height: 36px;
   background: url(../icons/mypageIcon.png);
   background-repeat: no-repeat;
-  background-position: center;
-  margin: 10px;
+  background-position: center top;
   display: inline-block;
   position: relative;
 }
 .nav .nav_icon a.mypage_ico > span {
   display: inline-block;
-  padding: 45px 0;
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  padding: 35px 0;
+}
+.nav .nav_icon a:last-child {
+  margin-left: 20px;
+}
+.nav .menu_btn {
+  display: none;
+}
+
+/* mobile_menu */
+.mobile_menu_wrap {
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.mobile_menu_wrap.show {
+  display: block;
+  opacity: 1;
+}
+.mobile_menu_wrap.show .mobile_menu {
+  right: 0;
+}
+.mobile_menu_wrap .mobile_menu {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  right: -65%;
+  top: 0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.mobile_menu_wrap .mobile_menu .m_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  padding: 0 24px;
+}
+.mobile_menu_wrap .mobile_menu .m_header .m_logo {
+  width: 50px;
+  height: 50px;
+}
+.mobile_menu_wrap .mobile_menu .m_header .m_menu_close {
+  width: 24px;
+  height: 24px;
+  background: url(../icons/close_btn.svg) no-repeat center;
+  text-indent: -9999px;
+  cursor: pointer;
 }
 
 /* banner */
 .banner_wrap {
   position: relative;
-  font-family: "Poppins", sans-serif;
   width: 100%;
   height: 400px;
 }
@@ -241,7 +312,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .banner_wrap > div .hero-image.hi-1 {
   background-image: url("../img/main_banner01.jpg");
@@ -651,9 +723,7 @@ body {
   background-color: #07090c;
 }
 .rental .rental_service ul li:hover img {
-  -webkit-animation: rentalAni 0.45s linear forwards;
   animation: rentalAni 0.45s linear forwards;
-  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
 .rental .rental_service ul li:hover figcaption {
@@ -663,7 +733,8 @@ body {
 .rental .rental_service ul li img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .rental .rental_service ul li figcaption {
   position: absolute;
@@ -746,27 +817,12 @@ body {
   left: 37px;
   animation-duration: 442ms;
 }
-
-@-webkit-keyframes rentalAni {
-  50% {
-    -webkit-transform: scale(0.8) translateY(0%);
-    transform: scale(0.8) translateY(0%);
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: scale(0.8) translateY(150%);
-    transform: scale(0.8) translateY(150%);
-    opacity: 0.5;
-  }
-}
 @keyframes rentalAni {
   50% {
-    -webkit-transform: scale(0.8) translateY(0%);
     transform: scale(0.8) translateY(0%);
     opacity: 0.5;
   }
   100% {
-    -webkit-transform: scale(0.8) translateY(150%);
     transform: scale(0.8) translateY(150%);
     opacity: 0.5;
   }
@@ -822,7 +878,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* event */
@@ -969,15 +1026,25 @@ body {
 }
 
 /* 미디어 쿼리 */
-@media (max-width: 1280px) {
+@media (max-width: 1090px) {
   .container {
     width: 100%;
   }
   .nav > ul > li a {
     width: 100px;
   }
+  .nav .nav_icon {
+    display: none;
+  }
   .nav .nav_icon a {
     width: auto;
+  }
+  .nav .menu_btn {
+    display: flex;
+    width: 24px;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
   }
   .banner_wrap .banner_row h1,
   h2 {

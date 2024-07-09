@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* 인코딩 셋팅 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 /* 색상 셋팅 */
 /* 여백 초기화 */
 body,
@@ -78,6 +79,7 @@ h5,
 h6 {
   font-size: 13px;
   font-weight: normal;
+  font-family: "Poppins", sans-serif;
 }
 
 /* 테두리 초기화 */
