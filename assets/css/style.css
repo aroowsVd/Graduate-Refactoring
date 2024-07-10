@@ -222,8 +222,8 @@ body {
   top: 0;
   width: 0;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
+  color: #fff;
 }
 .mobile_menu_wrap.show {
   width: 100vw;
@@ -240,8 +240,12 @@ body {
   position: absolute;
   right: -65%;
   top: 0;
-  background: #fff;
   transition: all 0.3s ease;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1), -10px 0 15px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(rgba(66, 60, 90, 0.6), rgba(66, 60, 90, 0.8));
+  border-radius: 7px 0 0 7px;
 }
 .mobile_menu_wrap .mobile_menu .m_header {
   display: flex;
@@ -260,6 +264,66 @@ body {
   background: url(../icons/close_btn.svg) no-repeat center;
   text-indent: -9999px;
   cursor: pointer;
+}
+.mobile_menu_wrap .mobile_menu .quick {
+  display: flex;
+}
+.mobile_menu_wrap .mobile_menu .quick a {
+  display: flex;
+  flex-direction: column;
+  height: 64px;
+  text-align: center;
+  flex: 1 1 0;
+  color: #fff;
+}
+.mobile_menu_wrap .mobile_menu .quick a i {
+  font-size: 20px;
+  flex-basis: 100%;
+  padding-top: 16px;
+}
+.mobile_menu_wrap .mobile_menu .quick a span {
+  font-size: 16px;
+  flex-basis: 100%;
+}
+.mobile_menu_wrap .mobile_menu .m_menu {
+  padding: 24px 0;
+  flex-grow: 1;
+}
+.mobile_menu_wrap .mobile_menu .m_info {
+  height: 140px;
+  border-top: 1px solid #fff;
+  margin: 0 24px;
+  padding: 24px 0;
+}
+.mobile_menu_wrap .mobile_menu .m_info em {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 7px;
+}
+.mobile_menu_wrap .mobile_menu .m_info ul {
+  margin-top: 20px;
+}
+.mobile_menu_wrap .mobile_menu .m_info ul li {
+  display: inline-block;
+  margin-left: 14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
+}
+.mobile_menu_wrap .mobile_menu .m_info ul li:first-child {
+  margin: 0;
+  background: url(../icons/twitter.png) no-repeat center;
+  background-size: 70%;
+}
+.mobile_menu_wrap .mobile_menu .m_info ul li:nth-child(2) {
+  background: url(../icons/instar.png) no-repeat center;
+  background-size: 70%;
+}
+.mobile_menu_wrap .mobile_menu .m_info ul li:nth-child(3) {
+  background: url(../icons/facebook.png) no-repeat center;
+  background-size: 70%;
 }
 
 /* banner */
@@ -310,7 +374,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .banner_wrap > div .hero-image.hi-1 {
   background-image: url("../img/main_banner01.jpg");
@@ -720,9 +785,7 @@ body {
   background-color: #07090c;
 }
 .rental .rental_service ul li:hover img {
-  -webkit-animation: rentalAni 0.45s linear forwards;
   animation: rentalAni 0.45s linear forwards;
-  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
 .rental .rental_service ul li:hover figcaption {
@@ -732,7 +795,8 @@ body {
 .rental .rental_service ul li img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .rental .rental_service ul li figcaption {
   position: absolute;
@@ -815,27 +879,12 @@ body {
   left: 37px;
   animation-duration: 442ms;
 }
-
-@-webkit-keyframes rentalAni {
-  50% {
-    -webkit-transform: scale(0.8) translateY(0%);
-    transform: scale(0.8) translateY(0%);
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: scale(0.8) translateY(150%);
-    transform: scale(0.8) translateY(150%);
-    opacity: 0.5;
-  }
-}
 @keyframes rentalAni {
   50% {
-    -webkit-transform: scale(0.8) translateY(0%);
     transform: scale(0.8) translateY(0%);
     opacity: 0.5;
   }
   100% {
-    -webkit-transform: scale(0.8) translateY(150%);
     transform: scale(0.8) translateY(150%);
     opacity: 0.5;
   }
@@ -891,7 +940,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* event */
