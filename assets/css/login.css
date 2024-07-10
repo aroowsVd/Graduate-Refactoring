@@ -38,10 +38,6 @@
   text-indent: 16px;
   box-sizing: border-box;
 }
-.login .log_main li input::-moz-placeholder {
-  font-size: 16px;
-  color: #9fa19f;
-}
 .login .log_main li input::placeholder {
   font-size: 16px;
   color: #9fa19f;
