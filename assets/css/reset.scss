@@ -229,3 +229,15 @@ input:checked[type="checkbox"] {
   display: inline-block;
   vertical-align: middle;
 }
+
+/* root */
+:root {
+
+  // color
+  --main-color: #b84d32;
+  --main-color-sub: #FF4500;
+  --background-black: #211f1f;
+
+  // size
+  --size-padding: 16px;
+}
