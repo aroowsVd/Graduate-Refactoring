@@ -439,7 +439,8 @@ $status: (login, logout, member, mypage);
   .choice_cards {
     width: 250px;
     height: 350px;
-    padding: 50px 0;
+    padding: 50px;
+    margin-right: 33px;
 
     .swiper-slide {
       position: relative;
@@ -1154,6 +1155,12 @@ $status: (login, logout, member, mypage);
         left: 50%;
         transform: translate(-50%);
       }
+    }
+
+    .choice_cards {
+      width: 220px;
+      height: 300px;
+      margin-right: 20px;
     }
   }
 }
