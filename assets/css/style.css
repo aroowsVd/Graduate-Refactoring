@@ -39,12 +39,17 @@ body {
   z-index: 2;
 }
 
+#rental {
+  background: url(../img/rental_back.png) no-repeat center;
+  background-size: cover;
+}
+
 #food {
-  margin-top: 230px;
+  margin-top: 185px;
 }
 
 #event {
-  margin: 100px 0;
+  margin: 80px 0;
 }
 
 #footer {
@@ -676,21 +681,20 @@ body {
 
 /* rental */
 .rental {
-  padding-top: 40px;
-  text-align: center;
-  background: url(../img/rental_back.png) no-repeat center;
-  background-size: cover;
+  padding: calc(var(--size-padding) * 3) 0;
 }
 .rental > h2 {
-  font-size: 30px;
+  font-size: 2.31em;
+  font-weight: bold;
   color: #fff;
-  font-weight: 700;
+  margin-bottom: calc(var(--size-padding) * 1.5);
+  text-align: center;
 }
 .rental > p {
-  font-size: 22px;
+  font-size: 1.69em;
   color: #fff;
-  font-weight: 500;
-  margin-top: 37px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 .rental .rental_service {
   margin: 30px 10% 0 10%;
@@ -862,7 +866,7 @@ body {
   overflow-x: hidden;
 }
 .food .food_chart .swiper-slide img {
-  border-radius: 20px;
+  border-radius: 10px;
   display: block;
   width: 100%;
   height: 100%;
@@ -873,7 +877,7 @@ body {
 /* event */
 .event img {
   display: block;
-  border-radius: 4px;
+  border-radius: 10px;
   height: 100%;
 }
 .event .event_header {
@@ -903,27 +907,27 @@ body {
 }
 .event .event_main .event_left {
   flex-basis: 66%;
-  margin-right: 2%;
+  margin-right: 32px;
   display: flex;
   flex-wrap: wrap;
 }
 .event .event_main .event_left .event_slider {
-  margin-bottom: 2%;
+  margin-bottom: 32px;
 }
 .event .event_main .event_left .event_box1 {
-  flex-basis: 49%;
-  margin-right: 2%;
+  flex-basis: calc(50% - 16px);
+  margin-right: 32px;
 }
 .event .event_main .event_left .event_box2 {
-  flex-basis: 49%;
+  flex-basis: calc(50% - 16px);
 }
 .event .event_main .event_right {
-  flex-basis: 34%;
+  flex-basis: calc(34% - 32px);
 }
 
 /* footer */
 .footer_info {
-  padding: 50px 0;
+  padding: 80px 0;
   position: relative;
 }
 .footer_info > span {
@@ -961,8 +965,11 @@ body {
 }
 .footer_info .footer_sns {
   position: absolute;
-  right: 15px;
-  top: 33px;
+  right: 0;
+  top: 63px;
+}
+.footer_info .footer_sns ul {
+  text-align: right;
 }
 .footer_info .footer_sns li {
   display: inline-block;
@@ -1097,6 +1104,22 @@ body {
   }
   .event h2 {
     font-size: 25px !important;
+  }
+  .event .event_left {
+    margin-right: 16px !important;
+  }
+  .event .event_left .event_slider {
+    margin-bottom: 16px !important;
+  }
+  .event .event_left .event_box1 {
+    flex-basis: calc(50% - 8px) !important;
+    margin-right: 16px !important;
+  }
+  .event .event_left .event_box2 {
+    flex-basis: calc(50% - 8px) !important;
+  }
+  .event .event_right {
+    flex-basis: calc(34% - 16px) !important;
   }
   .food h2 {
     font-size: 25px !important;
