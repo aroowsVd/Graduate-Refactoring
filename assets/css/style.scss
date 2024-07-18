@@ -1115,6 +1115,39 @@ $status: (login, logout, member, mypage);
   }
 }
 
+.global_btn {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 32px;
+    color: #fff;
+    background-color: var(--main-color-sub);
+    transition: 0.2s;
+
+    &.go_top {
+      border-radius: 10px 10px 0 0;
+    }
+
+    &.go_down {
+      margin-top: 2px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
 /* 미디어 쿼리 */
 @media (max-width: 1090px) {
   .container {
