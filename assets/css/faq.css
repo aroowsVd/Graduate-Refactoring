@@ -19,6 +19,14 @@
   z-index: 2;
 }
 
+#section {
+  padding-top: 90px;
+}
+
+#footer {
+  background: var(--background-black);
+}
+
 /* 가운데 영역 */
 .container {
   width: 1080px;
@@ -298,6 +306,172 @@
 .mobile_menu_wrap .mobile_menu .m_info ul li:nth-child(3) {
   background: url(../icons/facebook.png) no-repeat center;
   background-size: 70%;
+}
+
+.section {
+  padding: calc(var(--size-padding) * 5) 0;
+}
+.section .section_top {
+  float: right;
+  margin-bottom: var(--size-padding);
+}
+.section .section_top strong i {
+  margin-right: 5px;
+}
+.section .section_tab {
+  margin-top: calc(var(--size-padding) * 2);
+}
+.section .section_tab ul {
+  overflow: hidden;
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+}
+.section .section_tab ul li {
+  float: left;
+  width: 25%;
+  padding: 5px 0;
+}
+.section .section_tab ul li.active {
+  border-bottom: 2px solid #222;
+}
+.section .section_tab ul li a {
+  font-size: 15px;
+}
+.section h3 {
+  margin-top: 50px;
+  color: #747474;
+  margin-bottom: 5px;
+}
+.section #Accordion_wrap .que {
+  position: relative;
+  padding: 17px 0;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #dddddd;
+}
+.section #Accordion_wrap .que:first-child {
+  border-top: 1px solid #222;
+}
+.section #Accordion_wrap .que::before {
+  display: inline-block;
+  content: "Q";
+  font-size: 14px;
+  color: var(--main-color-sub);
+  margin-right: 5px;
+}
+.section #Accordion_wrap .que.on > span {
+  font-weight: 500;
+  color: var(--main-color-sub);
+}
+.section #Accordion_wrap .anw {
+  display: none;
+  overflow: hidden;
+  font-size: 14px;
+  background-color: #f4f4f2;
+  padding: 27px 0;
+}
+.section #Accordion_wrap .anw::before {
+  display: inline-block;
+  content: "A";
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  margin-right: 5px;
+}
+
+/* footer */
+.footer_info {
+  padding: 80px 0;
+  position: relative;
+}
+.footer_info > span {
+  display: inline-block;
+  width: 50px;
+}
+.footer_info > ul {
+  padding: 15px 0;
+}
+.footer_info > ul li {
+  position: relative;
+  display: inline;
+  white-space: nowrap;
+}
+.footer_info > ul li:after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 1px;
+  height: 11px;
+  background: #8f8f8f;
+}
+.footer_info > ul li:last-child::after {
+  width: 0;
+  height: 0;
+}
+.footer_info > ul li a {
+  color: #8f8f8f;
+  padding-right: 16px;
+}
+.footer_info address p {
+  color: #8f8f8f;
+  padding-bottom: 15px;
+}
+.footer_info .footer_sns {
+  position: absolute;
+  right: 0;
+  top: 63px;
+}
+.footer_info .footer_sns ul {
+  text-align: right;
+}
+.footer_info .footer_sns li {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-left: 4px;
+  background-image: url(../img/icon.png);
+}
+.footer_info .footer_sns li.s1 {
+  background-position: 0 -428px;
+}
+.footer_info .footer_sns li.s1:hover {
+  background-position: 0 -464px;
+}
+.footer_info .footer_sns li.s2 {
+  background-position: -36px -428px;
+}
+.footer_info .footer_sns li.s2:hover {
+  background-position: -36px -464px;
+}
+.footer_info .footer_sns li.s3 {
+  background-position: -72px -428px;
+}
+.footer_info .footer_sns li.s3:hover {
+  background-position: -72px -464px;
+}
+.footer_info .footer_sns li.s4 {
+  background-position: -108px -428px;
+}
+.footer_info .footer_sns li.s4:hover {
+  background-position: -108px -464px;
+}
+.footer_info .footer_sns li.s5 {
+  background-position: -144px -428px;
+}
+.footer_info .footer_sns li.s5:hover {
+  background-position: -144px -464px;
+}
+.footer_info .footer_sns .tel {
+  text-align: right;
+  padding-top: 5px;
+}
+.footer_info .footer_sns .tel a {
+  color: #8f8f8f;
+  font-size: 21px;
+}
+.footer_info .footer_sns .tel a em {
+  color: #fff;
 }
 
 /* 미디어 쿼리 */
