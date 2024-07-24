@@ -22,6 +22,10 @@
   padding-top: 90px;
 }
 
+#footer {
+  background: var(--background-black);
+}
+
 /* 가운데 영역 */
 .container {
   width: 1080px;
@@ -511,6 +515,136 @@
 }
 .content .parent .streak {
   stroke-width: 82px;
+}
+
+.event_cont h2 {
+  color: var(--main-color-sub);
+  font-size: 1.85em;
+  padding-bottom: var(--size-padding);
+}
+.event_cont > div {
+  padding-bottom: calc(var(--size-padding) * 4);
+}
+.event_cont > div:last-child {
+  padding-bottom: calc(var(--size-padding) * 5);
+}
+.event_cont .list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+.event_cont .list ul li {
+  flex-basis: 224px;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.event_cont .list ul li span {
+  display: block;
+  height: 60px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 17px 17px 0 17px;
+}
+.event_cont .list ul li p {
+  font-size: 14px;
+  color: #666;
+  padding: 0 17px 20px;
+}
+
+/* footer */
+.footer_info {
+  padding: 80px 0;
+  position: relative;
+}
+.footer_info > span {
+  display: inline-block;
+  width: 50px;
+}
+.footer_info > ul {
+  padding: 15px 0;
+}
+.footer_info > ul li {
+  position: relative;
+  display: inline;
+  white-space: nowrap;
+}
+.footer_info > ul li:after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 1px;
+  height: 11px;
+  background: #8f8f8f;
+}
+.footer_info > ul li:last-child::after {
+  width: 0;
+  height: 0;
+}
+.footer_info > ul li a {
+  color: #8f8f8f;
+  padding-right: 16px;
+}
+.footer_info address p {
+  color: #8f8f8f;
+  padding-bottom: 15px;
+}
+.footer_info .footer_sns {
+  position: absolute;
+  right: 0;
+  top: 63px;
+}
+.footer_info .footer_sns ul {
+  text-align: right;
+}
+.footer_info .footer_sns li {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-left: 4px;
+  background-image: url(../img/icon.png);
+}
+.footer_info .footer_sns li.s1 {
+  background-position: 0 -428px;
+}
+.footer_info .footer_sns li.s1:hover {
+  background-position: 0 -464px;
+}
+.footer_info .footer_sns li.s2 {
+  background-position: -36px -428px;
+}
+.footer_info .footer_sns li.s2:hover {
+  background-position: -36px -464px;
+}
+.footer_info .footer_sns li.s3 {
+  background-position: -72px -428px;
+}
+.footer_info .footer_sns li.s3:hover {
+  background-position: -72px -464px;
+}
+.footer_info .footer_sns li.s4 {
+  background-position: -108px -428px;
+}
+.footer_info .footer_sns li.s4:hover {
+  background-position: -108px -464px;
+}
+.footer_info .footer_sns li.s5 {
+  background-position: -144px -428px;
+}
+.footer_info .footer_sns li.s5:hover {
+  background-position: -144px -464px;
+}
+.footer_info .footer_sns .tel {
+  text-align: right;
+  padding-top: 5px;
+}
+.footer_info .footer_sns .tel a {
+  color: #8f8f8f;
+  font-size: 21px;
+}
+.footer_info .footer_sns .tel a em {
+  color: #fff;
 }
 
 /* 미디어 쿼리 */

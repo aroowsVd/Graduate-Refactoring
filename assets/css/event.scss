@@ -19,6 +19,9 @@
 #event {
   padding-top: 90px;
 }
+#footer {
+  background: var(--background-black);
+}
 
 /* 가운데 영역 */
 .container {
@@ -545,6 +548,158 @@ $status: (login, logout, member, mypage);
 
     .streak {
       stroke-width: 82px;
+    }
+  }
+}
+
+.event_cont {
+  h2 {
+    color: var(--main-color-sub);
+    font-size: 1.85em;
+    padding-bottom: var(--size-padding);
+  }
+
+  > div {
+    padding-bottom: calc(var(--size-padding) * 4);
+
+    &:last-child {
+      padding-bottom: calc(var(--size-padding) * 5);
+    }
+  }
+
+  .list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+
+    li {
+      flex-basis: 224px;
+
+      border: 1px solid #dbdbdb;
+      border-radius: 10px;
+      overflow: hidden;
+
+      span {
+        display: block;
+        height: 60px;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 17px 17px 0 17px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #666;
+        padding: 0 17px 20px;
+      }
+    }
+  }
+}
+
+/* footer */
+.footer_info {
+  padding: 80px 0;
+  position: relative;
+
+  > span {
+    display: inline-block;
+    width: 50px;
+  }
+
+  > ul {
+    padding: 15px 0;
+
+    li {
+      position: relative;
+      display: inline;
+      white-space: nowrap;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 1px;
+        height: 11px;
+        background: #8f8f8f;
+      }
+
+      &:last-child::after {
+        width: 0;
+        height: 0;
+      }
+
+      a {
+        color: #8f8f8f;
+        padding-right: 16px;
+      }
+    }
+  }
+
+  address p {
+    color: #8f8f8f;
+    padding-bottom: 15px;
+  }
+
+  .footer_sns {
+    position: absolute;
+    right: 0;
+    top: 63px;
+
+    ul {
+      text-align: right;
+    }
+
+    li {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      margin-left: 4px;
+      background-image: url(../img/icon.png);
+
+      &.s1 {
+        background-position: 0 -428px;
+        &:hover {
+          background-position: 0 -464px;
+        }
+      }
+      &.s2 {
+        background-position: -36px -428px;
+        &:hover {
+          background-position: -36px -464px;
+        }
+      }
+      &.s3 {
+        background-position: -72px -428px;
+        &:hover {
+          background-position: -72px -464px;
+        }
+      }
+      &.s4 {
+        background-position: -108px -428px;
+        &:hover {
+          background-position: -108px -464px;
+        }
+      }
+      &.s5 {
+        background-position: -144px -428px;
+        &:hover {
+          background-position: -144px -464px;
+        }
+      }
+    }
+
+    .tel {
+      text-align: right;
+      padding-top: 5px;
+
+      a {
+        color: #8f8f8f;
+        font-size: 21px;
+        em {
+          color: #fff;
+        }
+      }
     }
   }
 }

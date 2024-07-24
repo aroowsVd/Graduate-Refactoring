@@ -1,50 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- meta 태그를 통한 검색 엔진 최적화 -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
-    />
-    <meta name="description" content="Drive In Car." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Drive in Cinema" />
     <meta name="keywords" content="DIC, 영화, 최신영화, 영화관, 졸업작품" />
     <title>자동차 극장 DIC</title>
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/faq.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="assets/css/event.css" />
 
-    <!-- 파비콘 -->
+    <!-- favicon -->
     <link rel="shortcut icon" href="assets/icons/favicon.ico" />
     <link
       rel="apple-touch-icon-precomposed"
+      sizes="72x72"
       href="assets/icons/apple-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon-precomposed"
+      sizes="96x96"
       href="assets/icons/favicon-96x96.png"
     />
     <link
       rel="apple-touch-icon-precomposed"
+      sizes="144x144"
       href="assets/icons/apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon-precomposed"
+      sizes="192x192"
       href="assets/icons/apple-icon.png"
-    />
-
-    <!-- 웹 폰트 -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean"
-      rel="stylesheet"
     />
   </head>
   <body>
@@ -91,7 +79,7 @@
                 <a href="event.html">서비스</a>
                 <ul>
                   <li><a href="event.html">이벤트</a></li>
-                  <li><a href="discount.html">제휴할인</a></li>
+                  <li><a href="index.html">제휴할인</a></li>
                   <li><a href="faq.html">자주묻는질문</a></li>
                 </ul>
               </li>
@@ -109,11 +97,11 @@
             </div>
             <!-- //로그아웃 -->
             <!--
-            <div class="header_icon">
-                <a href="#" class="logout_ico"><span class="l1">로그아웃</span></a>
-                <a href="#" class="mypage_ico"><span class="l2">마이페이지</span></a>
-            </div>
-            -->
+                <div class="header_icon">
+                    <a href="#" class="logout_ico"><span class="l1">로그아웃</span></a>
+                    <a href="#" class="mypage_ico"><span class="l2">마이페이지</span></a>
+                </div>
+                -->
           </div>
         </div>
       </div>
@@ -190,63 +178,111 @@
       </div>
     </div>
 
-    <!-- section -->
-    <section id="section">
+    <!-- event -->
+    <section id="event">
       <div class="container">
         <div class="row">
-          <div class="section">
-            <div class="section_top">
-              <a href="index.html">홈</a>
-              <strong
-                ><i class="fa-solid fa-angle-right"></i>자주 묻는 질문</strong
-              >
-            </div>
-            <h2>
-              <img src="./assets/img/faq.jpg" alt="자주 묻는 질문" />
-            </h2>
-            <div class="section_tab">
-              <ul>
-                <li class="tab_list active"><a href="#">FAQ</a></li>
-                <li class="tab_list"><a href="#">1:1 문의</a></li>
-              </ul>
-            </div>
-            <div class="section_tab_desc">
-              <div id="Accordion_wrap">
-                <h3>자주 묻는 질문 / F A Q</h3>
-                <div class="que">
-                  <span>첫번째 질문입니다.</span>
-                </div>
-                <div class="anw">
-                  <span>첫번째 대답입니다.</span>
-                </div>
-                <div class="que">
-                  <span>두번째 질문입니다.</span>
-                </div>
-                <div class="anw">
-                  <span>두번째 대답입니다.</span>
-                </div>
-                <div class="que">
-                  <span>세번째 질문입니다.</span>
-                </div>
-                <div class="anw">
-                  <span>세번째 대답입니다.</span>
-                </div>
-                <div class="que">
-                  <span>네번째 질문입니다.</span>
-                </div>
-                <div class="anw">
-                  <span>네번째 대답입니다.</span>
-                </div>
-                <div class="que">
-                  <span>다섯번째 질문입니다.</span>
-                </div>
-                <div class="anw">
-                  <span>다섯번째 대답입니다.</span>
-                </div>
+          <div class="event">
+            <h2>전체 이벤트</h2>
+            <ol class="tab">
+              <li class="tab1" style="border: 1px solid #dbdbdb">
+                <a href="event.html">진행중인 이벤트</a>
+              </li>
+              <li class="tab2" style="border: 1px solid var(--main-color-sub)">
+                <a href="eventover.html">종료된 이벤트</a>
+              </li>
+              <li class="tab3" style="margin-left: 0">
+                <a href="discount.html">제휴할인</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 종료 이벤트 -->
+    <section id="event_cont">
+      <div class="container">
+        <div class="row">
+          <div class="event_cont">
+            <div class="event_sec1">
+              <h2 style="padding-top: 48px">DIC 추천</h2>
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="assets/img/endEventCard01.png" alt=""
+                    /></a>
+                    <span>DIC 티켓<다시다시></span>
+                    <p>2022.03.27 ~ 2022.03.27</p>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="assets/img/endEventCard02.png" alt=""
+                    /></a>
+                    <span>DIC 티켓<다시다시></span>
+                    <p>2022.03.27 ~ 2022.03.27</p>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="assets/img/endEventCard03.png" alt=""
+                    /></a>
+                    <span>DIC 티켓<다시다시></span>
+                    <p>2022.03.27 ~ 2022.03.27</p>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="assets/img/endEventCard04.png" alt=""
+                    /></a>
+                    <span>DIC 티켓<다시다시>DIC 티켓<다시다시></span>
+                    <p>2022.03.27 ~ 2022.03.27</p>
+                  </li>
+                </ul>
               </div>
-              <!-- FAQ탭 -->
-              <div>1:1문의 탭</div>
-              <!-- 1:1문의 탭 -->
+            </div>
+            <div class="event_sec2">
+              <h2>극장</h2>
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="#"><img src="assets/img/event01.png" alt="" /></a>
+                    <span>DIC 티켓<다시다시></span>
+                    <p>2022.03.27 ~ 2022.03.27</p>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/img/event01.png" alt="" /></a>
+                    <span>DIC 티켓<다시다시></span>
+                    <p>2022.03.27 ~ 2022.03.27</p>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/img/event01.png" alt="" /></a>
+                    <span>DIC 티켓<다시다시></span>
+                    <p>2022.03.27 ~ 2022.03.27</p>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/img/event01.png" alt="" /></a>
+                    <span>DIC 티켓<다시다시>DIC 티켓<다시다시></span>
+                    <p>2022.03.27 ~ 2022.03.27</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="event_sec3">
+              <h2>제휴/할인</h2>
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="#"><img src="assets/img/event01.png" alt="" /></a>
+                    <span>DIC 티켓<다시다시></span>
+                    <p>2022.03.27 ~ 2022.03.27</p>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/img/event01.png" alt="" /></a>
+                    <span>DIC 티켓<다시다시></span>
+                    <p>2022.03.27 ~ 2022.03.27</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -308,6 +344,5 @@
     <!-- script -->
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/nav.js"></script>
-    <script src="assets/js/faq.js"></script>
   </body>
 </html>
