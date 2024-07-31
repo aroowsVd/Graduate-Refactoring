@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- meta 태그를 통한 검색 엔진 최적화 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Drive in Cinema" />
+    <meta name="keywords" content="DIC, 영화, 최신영화, 영화관, 졸업작품" />
+    <title>자동차 극장 DIC</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/store01.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="assets/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="96x96"
+      href="assets/icons/favicon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="192x192"
+      href="assets/icons/apple-icon.png"
+    />
+
+    <!-- 웹 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav id="nav">
+      <div class="container">
+        <div class="row">
+          <div class="nav">
+            <h1>
+              <a href="index.html" id="main_logo"
+                ><img src="assets/img/col_logo1.png" alt=""
+              /></a>
+            </h1>
+            <ul>
+              <li>
+                <a href="#">극장</a>
+                <ul>
+                  <li><a href="#">일반상영관</a></li>
+                  <li><a href="#">특별상영관</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">영화</a>
+                <ul>
+                  <li><a href="#">전체영화</a></li>
+                  <li><a href="#">Choice영화</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">예매</a>
+                <ul>
+                  <li><a href="#">빠른예매</a></li>
+                  <li><a href="#">상영시간표</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="store01.html">스토어</a>
+                <ul>
+                  <li><a href="retal_service.html">대여서비스</a></li>
+                  <li><a href="store01.html">Foodzone</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="event.html">서비스</a>
+                <ul>
+                  <li><a href="event.html">이벤트</a></li>
+                  <li><a href="discount.html">제휴할인</a></li>
+                  <li><a href="faq.html">자주묻는질문</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav_icon">
+              <a href="login.html" class="login_ico"
+                ><span class="l1">로그인</span></a
+              >
+              <a href="member01.html" class="member_ico"
+                ><span class="l2">회원가입</span></a
+              >
+            </div>
+            <div class="menu_btn">
+              <img src="assets/img/menu.png" alt="메뉴 버튼" />
+            </div>
+            <!-- //로그아웃 -->
+            <!--
+                <div class="header_icon">
+                    <a href="#" class="logout_ico"><span class="l1">로그아웃</span></a>
+                    <a href="#" class="mypage_ico"><span class="l2">마이페이지</span></a>
+                </div>
+                -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mobile menu -->
+    <div class="mobile_menu_wrap">
+      <div class="mobile_menu">
+        <div class="m_header">
+          <div class="m_logo">
+            <img src="assets/img/Logo(200px).png" alt="모바일 로고" />
+          </div>
+          <button type="button" class="m_menu_close">닫기</button>
+        </div>
+        <div class="quick">
+          <a href="#"
+            ><i class="fa-solid fa-ticket"></i><span>예매하기</span></a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-film"></i><span>상영시간표</span></a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-hands-holding-circle"></i
+            ><span>렌탈하기</span></a
+          >
+        </div>
+        <ul class="m_menu">
+          <li>
+            <a href="#" class="m_main_li">극장</a>
+            <ul class="m_sub_li">
+              <li><a href="#">일반상영관</a></li>
+              <li><a href="#">특별상영관</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">영화</a>
+            <ul class="m_sub_li">
+              <li><a href="#">전체영화</a></li>
+              <li><a href="#">Choice영화</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">예매</a>
+            <ul class="m_sub_li">
+              <li><a href="#">빠른예매</a></li>
+              <li><a href="#">상영시간표</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">스토어</a>
+            <ul class="m_sub_li">
+              <li><a href="#">대여서비스</a></li>
+              <li><a href="#">Foodzone</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">서비스</a>
+            <ul class="m_sub_li">
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">제휴할인</a></li>
+              <li><a href="#">자주묻는질문</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="m_info">
+          <span>Drive In Cinema</span>
+          <em>1544 - 0070</em>
+          <ul>
+            <li class="sns01"><a href="#" class="ir_pm">트위터</a></li>
+            <li class="sns02"><a href="#" class="ir_pm">인스타그램</a></li>
+            <li class="sns03"><a href="#" class="ir_pm">페이스북</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 베너 -->
+    <section id="store-ban">
+      <div class="container">
+        <div class="row">
+          <div class="store-ban">
+            <h2>TICKET & POPCORN<br />GIFT SHOP</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 장바구니 nav -->
+    <section id="basket_nav">
+      <div class="container">
+        <div class="row">
+          <div class="basket_nav">
+            <div class="category">
+              <ul class="category_cont">
+                <li>
+                  <a href="#">영화관람권</a>
+                </li>
+                <li>
+                  <a href="#">팝콘</a>
+                </li>
+                <li>
+                  <a href="#">음료</a>
+                </li>
+                <li>
+                  <a href="#">스낵</a>
+                </li>
+              </ul>
+              <ul class="cart_cont">
+                <li>
+                  <a href="#">장바구니</a>
+                  <span>0</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //장바구니 nav -->
+
+    <!-- cart -->
+    <section id="cart">
+      <div class="container">
+        <div class="row">
+          <div class="cart">
+            <div class="cart_table">
+              <p>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>장바구니
+              </p>
+              <ul class="cart_list">
+                <li>
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      name="all_chk"
+                      id="all_chk"
+                      class="all_chk"
+                    />
+                    <label for="all_chk">전체선택</label>
+                  </div>
+                  <div class="del_btn">삭제 (<span class="num">0</span>)</div>
+                </li>
+                <li>
+                  <div class="checkbox">
+                    <input type="checkbox" name="item_chk" id="item_chk01" />
+                    <label for="item_chk01"></label>
+                  </div>
+                  <div class="item_detail">
+                    <img src="assets/img/snack01.jpg" />
+                    <p class="name"><strong>칠리치즈나쵸</strong></p>
+                    <p class="txt">칠리치즈나쵸</p>
+                  </div>
+                  <div class="opt_info">
+                    <strong class="price_unit">4,900</strong>원
+                    <div class="price_btn">
+                      <input type="button" value="-" class="minus_btn" />
+                      <input type="text" value="1" class="number" />
+                      <input type="button" value="+" class="plus_btn" />
+                    </div>
+                    <div class="total_p">
+                      <strong class="price_amount">4,900</strong>원
+                      <span class="del_li_btn"
+                        ><img
+                          src="https://tictoc-web.s3.ap-northeast-2.amazonaws.com/web/img/icon/btn_del_circle.svg"
+                      /></span>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="checkbox">
+                    <input type="checkbox" name="item_chk" id="item_chk02" />
+                    <label for="item_chk02"></label>
+                  </div>
+                  <div class="item_detail">
+                    <img src="assets/img/snack02.jpg" />
+                    <p class="name"><strong>플레인핫도그</strong></p>
+                    <p class="txt">플레인핫도그</p>
+                  </div>
+                  <div class="opt_info">
+                    <strong class="price_unit">4,500</strong>원
+                    <div class="price_btn">
+                      <input type="button" value="-" class="minus_btn" />
+                      <input type="text" value="1" class="number" />
+                      <input type="button" value="+" class="plus_btn" />
+                    </div>
+                    <div class="total_p">
+                      <strong class="price_amount">4,500</strong>원
+                      <span class="del_li_btn"
+                        ><img
+                          src="https://tictoc-web.s3.ap-northeast-2.amazonaws.com/web/img/icon/btn_del_circle.svg"
+                      /></span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="cart_total_area">
+                <p>결제 정보</p>
+                <div class="cart_total_price">
+                  <p>
+                    총 상품금액 <strong class="item_price">9,400</strong>원
+                    <span class="plus_ic"></span>
+                  </p>
+                  <p>
+                    할인금액
+                    <strong class="sale_price color-symbol">-0</strong>원
+                    <span class="plus_ic"></span>
+                  </p>
+                  <p>
+                    총 결제금액
+                    <strong class="total_price color-red">9,400</strong>원
+                  </p>
+                </div>
+              </div>
+              <div class="btn_box">
+                <button type="button" onclick="goBack()" class="btn wh-btn">
+                  계속 쇼핑하기
+                </button>
+                <button type="button" class="btn black-btn">구매하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //cart -->
+
+    <!-- AD -->
+    <section id="ad">
+      <img src="assets/img/ad_banner.png" />
+    </section>
+    <!-- //AD -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_info">
+            <span
+              ><img src="assets/icons/apple-icon.png" alt="Drive In Car"
+            /></span>
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">제휴/광고/부대사업 문의</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">윤리경영</a></li>
+            </ul>
+            <address>
+              <p>
+                인천광역시 연수구 먼우금로 123, 1층 DIC중앙(주) (인천시,
+                송도사옥)<br /><span class="bar2">대표자명 홍길동</span>
+                개인정보보호 책임자 경영지원실 실장 홍길동<br /><span
+                  class="bar2"
+                  >사업자등록번호 234-23-23454</span
+                >
+                통신판매업신고번호 제 123호
+              </p>
+              <p>
+                Copyright 2014 by DriveInCinemaJoongAng Inc. All right reserved
+              </p>
+            </address>
+            <div class="footer_sns">
+              <ul>
+                <li class="icon s1">
+                  <a href="#"><span class="ir_pm">트위터</span></a>
+                </li>
+                <li class="icon s2">
+                  <a href="#"><span class="ir_pm">페이스북</span></a>
+                </li>
+                <li class="icon s3">
+                  <a href="#"><span class="ir_pm">인스타그램</span></a>
+                </li>
+              </ul>
+              <div class="tel">
+                <a href="#">ARS <em>1544-0070</em></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- script -->
+      <script src="assets/js/jquery.min_1.12.4.js"></script>
+      <script src="assets/js/nav.js"></script>
+      <script src="assets/js/basket.js"></script>
+    </footer>
+  </body>
+</html>
