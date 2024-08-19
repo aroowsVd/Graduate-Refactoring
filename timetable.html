@@ -10,7 +10,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/retal_service.css" />
+    <link rel="stylesheet" href="assets/css/timetable.css" />
 
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/icons/favicon.ico" />
@@ -184,143 +184,138 @@
       </div>
     </div>
 
-    <!-- ban -->
-    <section id="ban">
+    <!-- timetable -->
+    <section id="timetable">
       <div class="container">
         <div class="row">
-          <div class="ban">
-            <div class="intro">
-              <h1>대여 서비스</h1>
-              <p>
-                고객님들께 더욱 좋은 환경에서의 영화 관람을 위한 서비스를
-                제공하고 있습니다.
-              </p>
+          <div class="timetable">
+            <h2>DIC 상영시간표</h2>
+            <div class="tab_container">
+              <!--탭 메뉴 영역 -->
+              <div class="tabs">
+                <div class="year">2022.04</div>
+                <ul>
+                  <li class="active">
+                    <a href="#" rel="tab1">18<br />월</a>
+                  </li>
+                  <li>
+                    <a href="#" rel="tab2">19<br />화</a>
+                  </li>
+                  <li>
+                    <a href="#" rel="tab3">20<br />수</a>
+                  </li>
+                  <li>
+                    <a href="#" rel="tab4">21<br />목</a>
+                  </li>
+                  <li>
+                    <a href="#" rel="tab5">22<br />금</a>
+                  </li>
+                  <li>
+                    <a href="#" rel="tab6" class="btn_sat">23<br />토</a>
+                  </li>
+                  <li>
+                    <a href="#" rel="tab7" class="btn_holi">24<br />일</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="tab1" class="tab_content">
+                <div class="sect-showtimes">
+                  <ul>
+                    <li>
+                      <div class="col-times">
+                        <div class="info-movie">
+                          <span class="ico-grade grade-12">12세</span>
+                          <a href="#">
+                            <strong>신비한 동물들과 덤블도어의 비밀</strong>
+                          </a>
+                          <span class="round lightblue">
+                            <em>상영중</em>
+                          </span>
+                          <i>판타지, 모험, 가족</i>
+                          /
+                          <i>142분</i>
+                          /
+                          <i>2022.04.13 개봉</i>
+                        </div>
+                        <div class="type-hall">
+                          <div class="info-hall">
+                            <ul>
+                              <li>2D</li>
+                              <li>1관</li>
+                              <li>총 50석</li>
+                            </ul>
+                          </div>
+                          <div class="info-timetable">
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  <em>19:00</em>
+                                  <span class="txt-lightblue">
+                                    <span class="hidden">잔여좌석</span>
+                                    50석
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-times">
+                        <div class="info-movie">
+                          <span class="ico-grade grade-15">15세</span>
+                          <a href="#">
+                            <strong>앵커</strong>
+                          </a>
+                          <span class="round lightblue">
+                            <em>상영중</em>
+                          </span>
+                          <i>스릴러</i>
+                          /
+                          <i>111분</i>
+                          /
+                          <i>2022.04.20 개봉</i>
+                        </div>
+                        <div class="type-hall">
+                          <div class="info-hall">
+                            <ul>
+                              <li>2D</li>
+                              <li>2관</li>
+                              <li>총 50석</li>
+                            </ul>
+                          </div>
+                          <div class="info-timetable">
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  <em>10:00</em>
+                                  <span class="txt-lightblue">
+                                    <span class="hidden">잔여좌석</span>
+                                    50석
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="tab2" class="tab_content">탭2</div>
+              <div id="tab3" class="tab_content">탭2</div>
+              <div id="tab4" class="tab_content">탭2</div>
+              <div id="tab5" class="tab_content">탭2</div>
+              <div id="tab6" class="tab_content">탭2</div>
+              <div id="tab7" class="tab_content">탭2</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- /ban -->
-
-    <!-- services -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="services">
-            <div class="serv_row">
-              <div class="media-1">
-                <a href="#" class="d-block">
-                  <img src="assets/img/rental01.png" alt="rental1" />
-                </a>
-                <div class="d-felx">
-                  <div>
-                    <h3>
-                      <a href="#">차량 무드등</a>
-                    </h3>
-                    <p>
-                      감성있는 분위기와 영화를 즐기고 싶으시다면 차량 무드등을
-                      대여해 보세요.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="media-1">
-                <a href="#" class="d-block">
-                  <img src="assets/img/rental02.png" alt="rental1" />
-                </a>
-                <div class="d-felx">
-                  <div>
-                    <h3>
-                      <a href="#">차량 테이블</a>
-                    </h3>
-                    <p>
-                      감성있는 분위기와 영화를 즐기고 싶으시다면 차량 무드등을
-                      대여해 보세요.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="media-1">
-                <a href="#" class="d-block">
-                  <img src="assets/img/rental03.png" alt="rental1" />
-                </a>
-                <div class="d-felx">
-                  <div>
-                    <h3>
-                      <a href="#">블루투스 스피커</a>
-                    </h3>
-                    <p>
-                      감성있는 분위기와 영화를 즐기고 싶으시다면 차량 무드등을
-                      대여해 보세요.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="next">
-              <div class="serv_col">
-                <h2>More Services</h2>
-                <p>대여 서비스 외로 다양한 서비스를 확인해 보세요.</p>
-              </div>
-              <div class="more_serv">
-                <div class="m-col bg">
-                  <img
-                    class="serv-main"
-                    src="assets/img/serv_col01.png"
-                    alt=""
-                  />
-                </div>
-                <div class="m-col">
-                  <div class="serv-cont">
-                    <span>
-                      <img
-                        src="./assets/icons/serv-cont01.png"
-                        alt="멀티 상영관"
-                      />
-                    </span>
-                    <h3>멀티 상영관</h3>
-                    <p>국내에 존재하는 유일한 멀티 상영관을 운영중입니다.</p>
-                  </div>
-                  <div class="serv-cont">
-                    <span>
-                      <img
-                        src="./assets/icons/serv-cont02.png"
-                        alt="레스토랑&카페"
-                      />
-                    </span>
-                    <h3>레스토랑 & 카페</h3>
-                    <p>
-                      퀄리티 높은 음식을 제공해 드리기 위한 레스토랑과 카페를
-                      운영중입니다.
-                    </p>
-                  </div>
-                </div>
-                <div class="m-col">
-                  <div class="serv-cont">
-                    <span>
-                      <img
-                        src="./assets/icons/serv-cont03.png"
-                        alt="예매 서비스"
-                      />
-                    </span>
-                    <h3>예매 서비스</h3>
-                    <p>빠른 관람과 시간절약을 위한 예약 서비스를 이용하세요.</p>
-                  </div>
-                  <div class="serv-cont">
-                    <span>
-                      <img src="./assets/icons/serv-cont04.png" alt="전화" />
-                    </span>
-                    <h3>15/7 Support</h3>
-                    <p>9시부터 24시 까지 실시간 고객센터를 운영중입니다.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /services -->
+    <!-- //timetable -->
 
     <!-- AD -->
     <section id="ad">
@@ -379,8 +374,10 @@
         </div>
       </div>
     </footer>
+
     <!-- script -->
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/nav.js"></script>
+    <script src="assets/js/timetable.js"></script>
   </body>
 </html>
