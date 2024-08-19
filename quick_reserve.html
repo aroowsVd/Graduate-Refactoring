@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- meta 태그를 통한 검색 엔진 최적화 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Drive in Cinema" />
+    <meta name="keywords" content="DIC, 영화, 최신영화, 영화관, 졸업작품" />
+    <title>자동차 극장 DIC</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/quick_reserve.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="assets/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="96x96"
+      href="assets/icons/favicon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="192x192"
+      href="assets/icons/apple-icon.png"
+    />
+
+    <!-- 웹 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav id="nav">
+      <div class="container">
+        <div class="row">
+          <div class="nav">
+            <h1>
+              <a href="index.html" id="main_logo"
+                ><img src="assets/img/col_logo1.png" alt=""
+              /></a>
+            </h1>
+            <ul>
+              <li>
+                <a href="#">극장</a>
+                <ul>
+                  <li><a href="#">일반상영관</a></li>
+                  <li><a href="#">특별상영관</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">영화</a>
+                <ul>
+                  <li><a href="#">전체영화</a></li>
+                  <li><a href="#">Choice영화</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">예매</a>
+                <ul>
+                  <li><a href="#">빠른예매</a></li>
+                  <li><a href="#">상영시간표</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="store01.html">스토어</a>
+                <ul>
+                  <li><a href="retal_service.html">대여서비스</a></li>
+                  <li><a href="store01.html">Foodzone</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="event.html">서비스</a>
+                <ul>
+                  <li><a href="event.html">이벤트</a></li>
+                  <li><a href="discount.html">제휴할인</a></li>
+                  <li><a href="faq.html">자주묻는질문</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav_icon">
+              <a href="login.html" class="login_ico"
+                ><span class="l1">로그인</span></a
+              >
+              <a href="member01.html" class="member_ico"
+                ><span class="l2">회원가입</span></a
+              >
+            </div>
+            <div class="menu_btn">
+              <img src="assets/img/menu.png" alt="메뉴 버튼" />
+            </div>
+            <!-- //로그아웃 -->
+            <!--
+                <div class="header_icon">
+                    <a href="#" class="logout_ico"><span class="l1">로그아웃</span></a>
+                    <a href="#" class="mypage_ico"><span class="l2">마이페이지</span></a>
+                </div>
+                -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mobile menu -->
+    <div class="mobile_menu_wrap">
+      <div class="mobile_menu">
+        <div class="m_header">
+          <div class="m_logo">
+            <img src="assets/img/Logo(200px).png" alt="모바일 로고" />
+          </div>
+          <button type="button" class="m_menu_close">닫기</button>
+        </div>
+        <div class="quick">
+          <a href="#"
+            ><i class="fa-solid fa-ticket"></i><span>예매하기</span></a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-film"></i><span>상영시간표</span></a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-hands-holding-circle"></i
+            ><span>렌탈하기</span></a
+          >
+        </div>
+        <ul class="m_menu">
+          <li>
+            <a href="#" class="m_main_li">극장</a>
+            <ul class="m_sub_li">
+              <li><a href="#">일반상영관</a></li>
+              <li><a href="#">특별상영관</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">영화</a>
+            <ul class="m_sub_li">
+              <li><a href="#">전체영화</a></li>
+              <li><a href="#">Choice영화</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">예매</a>
+            <ul class="m_sub_li">
+              <li><a href="#">빠른예매</a></li>
+              <li><a href="#">상영시간표</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">스토어</a>
+            <ul class="m_sub_li">
+              <li><a href="#">대여서비스</a></li>
+              <li><a href="#">Foodzone</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">서비스</a>
+            <ul class="m_sub_li">
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">제휴할인</a></li>
+              <li><a href="#">자주묻는질문</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="m_info">
+          <span>Drive In Cinema</span>
+          <em>1544 - 0070</em>
+          <ul>
+            <li class="sns01"><a href="#" class="ir_pm">트위터</a></li>
+            <li class="sns02"><a href="#" class="ir_pm">인스타그램</a></li>
+            <li class="sns03"><a href="#" class="ir_pm">페이스북</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- reserve -->
+    <section id="reserve">
+      <div class="container">
+        <div class="row">
+          <div class="reserve">
+            <h2>빠른예매</h2>
+            <div class="right">
+              <a href="timetable.html" class="btn"
+                ><i class="fa fa-clock-o" aria-hidden="true"></i>상영시간표</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //reserve -->
+
+    <div class="container">
+      <div class="row">
+        <div class="quick_reserve">
+          <div class="order">
+            <div class="col-sm-3 cont">
+              <!-- <h2>영화목록</h2> -->
+              <table class="table table-hover">
+                <thead>
+                  <tr class="tr_header">
+                    <th>영화</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td onclick="getDateList(7)" style="cursor: pointer">
+                      <span class="ico-grade grade-15">15세</span>범죄도시2
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td onclick="getDateList(1)" style="cursor: pointer">
+                      <span class="ico-grade grade-12">12세</span>신비한
+                      동물들과 덤블도어의 비밀
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td onclick="getDateList(2)" style="cursor: pointer">
+                      <span class="ico-grade grade-15">15세</span>앵커
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td onclick="getDateList(8)" style="cursor: pointer">
+                      <span class="ico-grade grade-12">12세</span>쥬라기
+                      월드-도미니언
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td onclick="getDateList(9)" style="cursor: pointer">
+                      <span class="ico-grade grade-12">12세</span>닥터
+                      스트레인지-대혼돈의 멀티버스
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td onclick="getDateList(3)" style="cursor: pointer">
+                      <span class="ico-grade grade-15">15세</span>극장판
+                      주술회전 0
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td onclick="getDateList(4)" style="cursor: pointer">
+                      <span class="ico-grade grade-12">12세</span>루이스
+                      웨인-사랑을 그린 고양이 화가
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td onclick="getDateList(5)" style="cursor: pointer">
+                      <span class="ico-grade grade-15">15세</span>앰뷸런스
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td onclick="getDateList(6)" style="cursor: pointer">
+                      <span class="ico-grade grade-12">12세</span>공기살인
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-sm-3 cont">
+              <!-- <h2>날짜</h2> -->
+              <table class="table table-success">
+                <thead>
+                  <tr class="tr_header">
+                    <th>날짜</th>
+                  </tr>
+                </thead>
+                <tbody id="date__list">
+                  <tr>
+                    <td class="year">2022</td>
+                  </tr>
+                  <tr>
+                    <td class="month">5</td>
+                  </tr>
+                  <tr>
+                    <td class="red"><span>일</span>22</td>
+                  </tr>
+                  <tr>
+                    <td><span>월</span>23</td>
+                  </tr>
+                  <tr>
+                    <td><span>화</span>24</td>
+                  </tr>
+                  <tr>
+                    <td><span>수</span>25</td>
+                  </tr>
+                  <tr>
+                    <td><span>목</span>26</td>
+                  </tr>
+                  <tr>
+                    <td><span>금</span>27</td>
+                  </tr>
+                  <tr>
+                    <td class="blue"><span>토</span>28</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-sm-3 cont">
+              <!-- <h2>날짜</h2> -->
+              <table class="table table-success">
+                <thead>
+                  <tr class="tr_header">
+                    <th>시간</th>
+                  </tr>
+                </thead>
+                <tbody id="date__list">
+                  <tr>
+                    <td><i class="fa fa-moon-o" aria-hidden="true"></i></td>
+                  </tr>
+                  <tr>
+                    <td
+                      onclick="getDateDesc('7','2022-05-22','22:20')"
+                      style="cursor: pointer"
+                    >
+                      22:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      onclick="getDateDesc('7','2022-05-23','22:20')"
+                      style="cursor: pointer"
+                    >
+                      22:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      onclick="getDateDesc('7','2022-05-24','22:20')"
+                      style="cursor: pointer"
+                    >
+                      22:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      onclick="getDateDesc('7','2022-05-25','22:20')"
+                      style="cursor: pointer"
+                    >
+                      22:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      onclick="getDateDesc('7','2022-05-26','22:20')"
+                      style="cursor: pointer"
+                    >
+                      22:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      onclick="getDateDesc('7','2022-05-27','22:20')"
+                      style="cursor: pointer"
+                    >
+                      22:20
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      onclick="getDateDesc('7','2022-05-28','22:20')"
+                      style="cursor: pointer"
+                    >
+                      22:20
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-sm-4 cont">
+              <!-- <h2>시간-차종-대여서비스 선택</h2> -->
+              <form
+                name="reserve"
+                method="post"
+                action="/reserve/html/reserveResult.jsp"
+              >
+                <table class="table table-info">
+                  <thead>
+                    <tr class="tr_header">
+                      <th>시간 확인</th>
+                    </tr>
+                  </thead>
+                  <tbody id="date__desc">
+                    <tr>
+                      <td rowspan="1">
+                        <input type="hidden" value="7" name="no" /><input
+                          type="hidden"
+                          value="2022-05-22"
+                          name="date"
+                        />2022-05-22
+                      </td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">
+                        <input type="hidden" value="22:20" name="time" />22:20
+                      </td>
+                    </tr>
+                    <tr></tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+
+            <div class="col-sm-4 cont">
+              <!-- <h2>시간-차종-대여서비스 선택</h2> -->
+              <form
+                name="reserve"
+                method="post"
+                action="/reserve/html/reserveResult.jsp"
+              >
+                <table class="table table-info">
+                  <thead>
+                    <tr class="tr_header">
+                      <th>차종</th>
+                    </tr>
+                  </thead>
+                  <tbody id="date__desc">
+                    <tr>
+                      <td>
+                        <input
+                          class="styled-radio"
+                          type="radio"
+                          name="carType"
+                          id="carType1"
+                          value="m_small"
+                        /><label for="carType1">&nbsp;소형 남은좌석 :10</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="styled-radio"
+                          type="radio"
+                          name="carType"
+                          id="carType2"
+                          value="m_middle"
+                        /><label for="carType2">&nbsp;중형 남은좌석 :10</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="styled-radio"
+                          type="radio"
+                          name="carType"
+                          id="carType3"
+                          value="m_big"
+                        /><label for="carType3">&nbsp;대형 남은좌석 :10</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="important">※소형,중형,대형 20,000원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+
+            <div class="col-sm-4 cont">
+              <!-- <h2>시간-차종-대여서비스 선택</h2> -->
+              <form
+                name="reserve"
+                method="post"
+                action="/reserve/html/reserveResult.jsp"
+              >
+                <table class="table table-info">
+                  <thead>
+                    <tr class="tr_header">
+                      <th>대여서비스</th>
+                    </tr>
+                  </thead>
+                  <tbody id="date__desc">
+                    <tr>
+                      <td>
+                        <input
+                          class="styled-checkbox"
+                          type="checkbox"
+                          name="lend"
+                          id="lend1"
+                          value="차량무드등"
+                        /><label for="lend1">&nbsp;차량무드등</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="styled-checkbox"
+                          type="checkbox"
+                          name="lend"
+                          id="lend2"
+                          value="차량 테이블"
+                        /><label for="lend2">&nbsp;차량 테이블</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="styled-checkbox"
+                          type="checkbox"
+                          name="lend"
+                          id="lend3"
+                          value="블루투스 스피커"
+                        /><label for="lend3">&nbsp;블루투스 스피커</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="important">※DIC서비스 2,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div id="button__desc">
+              <button type="button" class="btn btn-primary" onclick="check()">
+                예매하기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- guide -->
+    <section id="ticket_tnb" class="tnb_container">
+      <div class="tnb step1">
+        <div class="info movie">
+          <div class="placeholder" title="영화선택">영화선택</div>
+        </div>
+        <div class="info time">
+          <div class="placeholder" title="시간선택">시간선택</div>
+        </div>
+        <div class="info car">
+          <div class="placeholder" title="차종선택">차종선택</div>
+        </div>
+        <div class="info service">
+          <div class="placeholder" title="서비스 신청">
+            서비스 신청<i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="info gd">
+          <div class="placeholder" title="결제">결제</div>
+        </div>
+      </div>
+    </section>
+    <!-- //guide -->
+
+    <!-- AD -->
+    <section id="ad">
+      <img src="assets/img/ad_banner.png" />
+    </section>
+    <!-- //AD -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_info">
+            <span
+              ><img src="assets/icons/apple-icon.png" alt="Drive In Car"
+            /></span>
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">제휴/광고/부대사업 문의</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">윤리경영</a></li>
+            </ul>
+            <address>
+              <p>
+                인천광역시 연수구 먼우금로 123, 1층 DIC중앙(주) (인천시,
+                송도사옥)<br /><span class="bar2">대표자명 홍길동</span>
+                개인정보보호 책임자 경영지원실 실장 홍길동<br /><span
+                  class="bar2"
+                  >사업자등록번호 234-23-23454</span
+                >
+                통신판매업신고번호 제 123호
+              </p>
+              <p>
+                Copyright 2014 by DriveInCinemaJoongAng Inc. All right reserved
+              </p>
+            </address>
+            <div class="footer_sns">
+              <ul>
+                <li class="icon s1">
+                  <a href="#"><span class="ir_pm">트위터</span></a>
+                </li>
+                <li class="icon s2">
+                  <a href="#"><span class="ir_pm">페이스북</span></a>
+                </li>
+                <li class="icon s3">
+                  <a href="#"><span class="ir_pm">인스타그램</span></a>
+                </li>
+              </ul>
+              <div class="tel">
+                <a href="#">ARS <em>1544-0070</em></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/nav.js"></script>
+  </body>
+</html>
