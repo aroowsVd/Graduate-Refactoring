@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- meta 태그를 통한 검색 엔진 최적화 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Drive in Cinema" />
+    <meta name="keywords" content="DIC, 영화, 최신영화, 영화관, 졸업작품" />
+    <title>자동차 극장 DIC</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/movie.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="assets/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="96x96"
+      href="assets/icons/favicon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="192x192"
+      href="assets/icons/apple-icon.png"
+    />
+
+    <!-- 웹 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav id="nav">
+      <div class="container">
+        <div class="row">
+          <div class="nav">
+            <h1>
+              <a href="index.html" id="main_logo"
+                ><img src="assets/img/col_logo1.png" alt=""
+              /></a>
+            </h1>
+            <ul>
+              <li>
+                <a href="#">극장</a>
+                <ul>
+                  <li><a href="#">일반상영관</a></li>
+                  <li><a href="#">특별상영관</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">영화</a>
+                <ul>
+                  <li><a href="#">전체영화</a></li>
+                  <li><a href="#">Choice영화</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">예매</a>
+                <ul>
+                  <li><a href="#">빠른예매</a></li>
+                  <li><a href="#">상영시간표</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="store01.html">스토어</a>
+                <ul>
+                  <li><a href="retal_service.html">대여서비스</a></li>
+                  <li><a href="store01.html">Foodzone</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="event.html">서비스</a>
+                <ul>
+                  <li><a href="event.html">이벤트</a></li>
+                  <li><a href="discount.html">제휴할인</a></li>
+                  <li><a href="faq.html">자주묻는질문</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav_icon">
+              <a href="login.html" class="login_ico"
+                ><span class="l1">로그인</span></a
+              >
+              <a href="member01.html" class="member_ico"
+                ><span class="l2">회원가입</span></a
+              >
+            </div>
+            <div class="menu_btn">
+              <img src="assets/img/menu.png" alt="메뉴 버튼" />
+            </div>
+            <!-- //로그아웃 -->
+            <!--
+                <div class="header_icon">
+                    <a href="#" class="logout_ico"><span class="l1">로그아웃</span></a>
+                    <a href="#" class="mypage_ico"><span class="l2">마이페이지</span></a>
+                </div>
+                -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mobile menu -->
+    <div class="mobile_menu_wrap">
+      <div class="mobile_menu">
+        <div class="m_header">
+          <div class="m_logo">
+            <img src="assets/img/Logo(200px).png" alt="모바일 로고" />
+          </div>
+          <button type="button" class="m_menu_close">닫기</button>
+        </div>
+        <div class="quick">
+          <a href="#"
+            ><i class="fa-solid fa-ticket"></i><span>예매하기</span></a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-film"></i><span>상영시간표</span></a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-hands-holding-circle"></i
+            ><span>렌탈하기</span></a
+          >
+        </div>
+        <ul class="m_menu">
+          <li>
+            <a href="#" class="m_main_li">극장</a>
+            <ul class="m_sub_li">
+              <li><a href="#">일반상영관</a></li>
+              <li><a href="#">특별상영관</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">영화</a>
+            <ul class="m_sub_li">
+              <li><a href="#">전체영화</a></li>
+              <li><a href="#">Choice영화</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">예매</a>
+            <ul class="m_sub_li">
+              <li><a href="#">빠른예매</a></li>
+              <li><a href="#">상영시간표</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">스토어</a>
+            <ul class="m_sub_li">
+              <li><a href="#">대여서비스</a></li>
+              <li><a href="#">Foodzone</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">서비스</a>
+            <ul class="m_sub_li">
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">제휴할인</a></li>
+              <li><a href="#">자주묻는질문</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="m_info">
+          <span>Drive In Cinema</span>
+          <em>1544 - 0070</em>
+          <ul>
+            <li class="sns01"><a href="#" class="ir_pm">트위터</a></li>
+            <li class="sns02"><a href="#" class="ir_pm">인스타그램</a></li>
+            <li class="sns03"><a href="#" class="ir_pm">페이스북</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 베너 -->
+    <section id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="banner">
+            <div class="sign">
+              <h1><span>HOT 영화</span></h1>
+            </div>
+            <h2>신비한 동물들과 덤블도어의 비밀</h2>
+            <p>
+              <span class="rating">12세 이상</span> 2hr 22min - 판타지/ 모험/
+              가족
+            </p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>
+              그린델왈드와 추종자들, 그의 위험한 신비한 동물들에 맞서 세상을
+              구할 거대한 전쟁에 나선다.
+            </p>
+            <a class="button" href="#">빠른예매</a>
+            <div class="play" id="showTrailer" data-youtube="8wOaosqTN8w">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 120 120"
+                style="enable-background: new 0 0 120 120"
+                xml:space="preserve"
+              >
+                <circle class="st0" cx="60" cy="60.4" r="56" />
+                <path
+                  class="st1"
+                  d="M81,65.4c4.8-2.8,4.8-7.2,0-10L53.5,39.6c-4.8-2.8-8.7-0.5-8.7,5v31.7c0,5.5,3.9,7.8,8.7,5L81,65.4z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //베너 -->
+
+    <!-- movie_chart -->
+    <section id="movie">
+      <div class="container">
+        <div class="row">
+          <div class="movie">
+            <h2>무비차트</h2>
+            <div class="toggle-wrapper">
+              <div class="toggle normal">
+                <input id="normal" type="checkbox" />
+                <label class="toggle-item" for="normal"></label>
+              </div>
+              <p>현재 상영작만 보기</p>
+            </div>
+            <div class="movie_title">
+              <ul class="clearfix">
+                <li class="active"><a href="#">이번주상영작</a></li>
+                <li><a href="#">상영예정작</a></li>
+              </ul>
+            </div>
+            <div class="movie_all">
+              <ul>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img src="assets/img/poster01.JPG" alt="더 배트맨" />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <a href="moive_detail01.html">
+                        <img src="assets/img/poster01.JPG" alt=" 더 배트맨" />
+                      </a>
+                    </div>
+                    <div class="right2">
+                      <h3>더 배트맨</h3>
+                      <p>15세 &nbsp; 2022 &nbsp; 액션, 범죄</p>
+                      <em
+                        >영웅이 될 것인가 악당이 될 것인가 운명을 결정할
+                        선택만이 남았다</em
+                      >
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.07 ~
+                        2022.03.13</span
+                      >
+                      <span><strong>상영관:</strong> 1관 / 2관</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img src="assets/img/poster02.JPG" alt="언차티드" />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img src="assets/img/poster02.JPG" alt="언차티드" />
+                    </div>
+                    <div class="right2">
+                      <h3>언차티드</h3>
+                      <p>12세 &nbsp; 2022 &nbsp; 액션, 모험</p>
+                      <em
+                        >모든 것을 걸었다면 세상 누구보다 빠르게 찾아야
+                        한다!</em
+                      >
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.07 ~
+                        2022.03.13</span
+                      >
+                      <span><strong>상영관:</strong> 1관 / 2관</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img src="assets/img/poster03.JPG" alt="안테벨룸" />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img src="assets/img/poster03.JPG" alt="안테벨룸" />
+                    </div>
+                    <div class="right2">
+                      <h3>안테벨룸</h3>
+                      <p>15세 &nbsp; 2022 &nbsp; 미스터리, 스릴러</p>
+                      <em
+                        >그것이 당신을 지목했고, 아무도 당신을 구할 수 없다.
+                        당신은 선택되었다.</em
+                      >
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.07 ~
+                        2022.03.13</span
+                      >
+                      <span><strong>상영관:</strong> 2관 / 3관</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img
+                      src="assets/img/poster04.JPG"
+                      alt="스파이더맨 노웨이홈"
+                    />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img
+                        src="assets/img/poster04.JPG"
+                        alt="스파이더맨 노웨이홈"
+                      />
+                    </div>
+                    <div class="right2">
+                      <h3>스파이더맨 노웨이홈</h3>
+                      <p>12세 &nbsp; 2021 &nbsp; 액션, 모험</p>
+                      <em>
+                        2021년 12월, 스파이더맨의 새로운 시대가 열린다!
+                        &nbsp;&nbsp; 세계관을 확장하는 멀티버스의 본격적인
+                        시작!</em
+                      >
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.07 ~
+                        2022.03.13</span
+                      >
+                      <span><strong>상영관:</strong> 2관 / 3관</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img src="assets/img/poster05.JPG" alt="극장판 주술회전0" />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img
+                        src="assets/img/poster05.JPG"
+                        alt="극장판 주술회전0"
+                      />
+                    </div>
+                    <div class="right2">
+                      <h3>극장판 주술회전0</h3>
+                      <p>15세 &nbsp; 2022 &nbsp; 애니메이션</p>
+                      <em>전 세계가 기다려온 [주술회전]의 첫 극장판 탄생!</em>
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.07 ~
+                        2022.03.13</span
+                      >
+                      <span><strong>상영관:</strong> 1관 / 3관</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img
+                      src="assets/img/poster06.JPG"
+                      alt="인민을 위해 복무하라"
+                    />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img
+                        src="assets/img/poster06.JPG"
+                        alt="인민을 위해 복무하라"
+                      />
+                    </div>
+                    <div class="right2">
+                      <h3>인민을 위해 복무하라</h3>
+                      <p>19세 &nbsp; 2021 &nbsp; 로멘스, 드라마</p>
+                      <em>
+                        세계가 주목하는 노벨문학상 후보 작가 원작<br />
+                        21세기를 뒤흔든 금지된 이야기가 펼쳐진다!</em
+                      >
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.07 ~
+                        2022.03.13</span
+                      >
+                      <span><strong>상영관:</strong> 1관 / 3관</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- //chart1 -->
+              <ul>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img src="assets/img/poster07.JPG" alt="뜨거운피" />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img src="assets/img/poster07.JPG" alt=" 뜨거운피" />
+                    </div>
+                    <div class="right2">
+                      <h3>뜨거운피</h3>
+                      <p>15세 &nbsp; 2022 &nbsp; 범죄, 드라마</p>
+                      <em>
+                        더 이상 물러날 곳도 도망칠 곳도 없다.<br />
+                        누구든 망설이는 놈이 진다!</em
+                      >
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.14 ~
+                        2022.03.20</span
+                      >
+                      <span><strong>상영관:</strong> 1관 / 2관</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img
+                      src="assets/img/poster08.JPG"
+                      alt="이상한 나라의 수학자"
+                    />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img
+                        src="assets/img/poster08.JPG"
+                        alt="이상한 나라의 수학자"
+                      />
+                    </div>
+                    <div class="right2">
+                      <h3>이상한 나라의 수학자</h3>
+                      <p>12세 &nbsp; 2022 &nbsp; 드라마</p>
+                      <em>“정답보다 중요한 건 답을 찾는 과정이야”</em>
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.14 ~
+                        2022.03.20</span
+                      >
+                      <span><strong>상영관:</strong> 1관 / 2관</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img
+                      src="assets/img/poster09.JPG"
+                      alt="어메이징 스파이더맨2"
+                    />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img
+                        src="assets/img/poster09.JPG"
+                        alt="어메이징 스파이더맨2"
+                      />
+                    </div>
+                    <div class="right2">
+                      <h3>어메이징 스파이더맨2</h3>
+                      <p>12세 &nbsp; 2014 &nbsp; 액션, 판타지</p>
+                      <em
+                        >연습은 끝났다!<br />
+                        적이 강해진 만큼 그도 강해져야만 한다!</em
+                      >
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.14 ~
+                        2022.03.20</span
+                      >
+                      <span><strong>상영관:</strong> 2관 / 3관</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img src="assets/img/poster10.JPG" alt="스펜서" />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img src="assets/img/poster10.JPG" alt="스펜서" />
+                    </div>
+                    <div class="right2">
+                      <h3>스펜서</h3>
+                      <p>12세 &nbsp; 2022 &nbsp; 드라마</p>
+                      <em
+                        >왕비가 되지 않고 자신의 이름을 찾기로 결심한 다이애나
+                        왕세자비의 새로운 이야기</em
+                      >
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.14 ~
+                        2022.03.20</span
+                      >
+                      <span><strong>상영관:</strong> 2관 / 3관</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img
+                      src="assets/img/poster11.JPG"
+                      alt="해적: 도깨비 깃발"
+                    />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img
+                        src="assets/img/poster11.JPG"
+                        alt="해적: 도깨비 깃발"
+                      />
+                    </div>
+                    <div class="right2">
+                      <h3>해적: 도깨비 깃발</h3>
+                      <p>12세 &nbsp; 2022 &nbsp; 모험, 액션</p>
+                      <em>
+                        해적과 의적, 그리고 역적 <br />
+                        사라진 보물! 찾는 자가 주인이다!</em
+                      >
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.14 ~
+                        2022.03.20</span
+                      >
+                      <span><strong>상영관:</strong> 1관 / 3관</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="movie_chart">
+                  <div class="movie_left">
+                    <img src="assets/img/poster12.JPG" alt="블랙라이트" />
+                  </div>
+                  <div class="movie_right">
+                    <div class="right1">
+                      <img src="assets/img/poster12.JPG" alt="블랙라이트" />
+                    </div>
+                    <div class="right2">
+                      <h3>블랙라이트</h3>
+                      <p>15세 &nbsp; 2021 &nbsp; 액션, 스릴러</p>
+                      <em>
+                        “내가 끝장내겠어! 바로 지금!”<br />
+                        모든 걸 끝내기 위한 그의 마지막 미션이 시작된다!</em
+                      >
+                      <span
+                        ><strong>상영기간:</strong> 2022.03.14 ~
+                        2022.03.20</span
+                      >
+                      <span><strong>상영관:</strong> 1관 / 3관</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- //chart2 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //movie_chart -->
+
+    <!-- AD -->
+    <section id="ad">
+      <img src="assets/img/ad_banner.png" />
+    </section>
+    <!-- //AD -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_info">
+            <span
+              ><img src="assets/icons/apple-icon.png" alt="Drive In Car"
+            /></span>
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">제휴/광고/부대사업 문의</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">윤리경영</a></li>
+            </ul>
+            <address>
+              <p>
+                인천광역시 연수구 먼우금로 123, 1층 DIC중앙(주) (인천시,
+                송도사옥)<br /><span class="bar2">대표자명 홍길동</span>
+                개인정보보호 책임자 경영지원실 실장 홍길동<br /><span
+                  class="bar2"
+                  >사업자등록번호 234-23-23454</span
+                >
+                통신판매업신고번호 제 123호
+              </p>
+              <p>
+                Copyright 2014 by DriveInCinemaJoongAng Inc. All right reserved
+              </p>
+            </address>
+            <div class="footer_sns">
+              <ul>
+                <li class="icon s1">
+                  <a href="#"><span class="ir_pm">트위터</span></a>
+                </li>
+                <li class="icon s2">
+                  <a href="#"><span class="ir_pm">페이스북</span></a>
+                </li>
+                <li class="icon s3">
+                  <a href="#"><span class="ir_pm">인스타그램</span></a>
+                </li>
+              </ul>
+              <div class="tel">
+                <a href="#">ARS <em>1544-0070</em></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/movie.js"></script>
+  </body>
+</html>

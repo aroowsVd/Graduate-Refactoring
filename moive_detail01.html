@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- meta 태그를 통한 검색 엔진 최적화 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Drive in Cinema" />
+    <meta name="keywords" content="DIC, 영화, 최신영화, 영화관, 졸업작품" />
+    <title>자동차 극장 DIC</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/movie_detial.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="assets/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="96x96"
+      href="assets/icons/favicon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="192x192"
+      href="assets/icons/apple-icon.png"
+    />
+
+    <!-- 웹 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav id="nav">
+      <div class="container">
+        <div class="row">
+          <div class="nav">
+            <h1>
+              <a href="index.html" id="main_logo"
+                ><img src="assets/img/col_logo1.png" alt=""
+              /></a>
+            </h1>
+            <ul>
+              <li>
+                <a href="#">극장</a>
+                <ul>
+                  <li><a href="#">일반상영관</a></li>
+                  <li><a href="#">특별상영관</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">영화</a>
+                <ul>
+                  <li><a href="#">전체영화</a></li>
+                  <li><a href="#">Choice영화</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">예매</a>
+                <ul>
+                  <li><a href="#">빠른예매</a></li>
+                  <li><a href="#">상영시간표</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="store01.html">스토어</a>
+                <ul>
+                  <li><a href="retal_service.html">대여서비스</a></li>
+                  <li><a href="store01.html">Foodzone</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="event.html">서비스</a>
+                <ul>
+                  <li><a href="event.html">이벤트</a></li>
+                  <li><a href="discount.html">제휴할인</a></li>
+                  <li><a href="faq.html">자주묻는질문</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav_icon">
+              <a href="login.html" class="login_ico"
+                ><span class="l1">로그인</span></a
+              >
+              <a href="member01.html" class="member_ico"
+                ><span class="l2">회원가입</span></a
+              >
+            </div>
+            <div class="menu_btn">
+              <img src="assets/img/menu.png" alt="메뉴 버튼" />
+            </div>
+            <!-- //로그아웃 -->
+            <!--
+                <div class="header_icon">
+                    <a href="#" class="logout_ico"><span class="l1">로그아웃</span></a>
+                    <a href="#" class="mypage_ico"><span class="l2">마이페이지</span></a>
+                </div>
+                -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mobile menu -->
+    <div class="mobile_menu_wrap">
+      <div class="mobile_menu">
+        <div class="m_header">
+          <div class="m_logo">
+            <img src="assets/img/Logo(200px).png" alt="모바일 로고" />
+          </div>
+          <button type="button" class="m_menu_close">닫기</button>
+        </div>
+        <div class="quick">
+          <a href="#"
+            ><i class="fa-solid fa-ticket"></i><span>예매하기</span></a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-film"></i><span>상영시간표</span></a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-hands-holding-circle"></i
+            ><span>렌탈하기</span></a
+          >
+        </div>
+        <ul class="m_menu">
+          <li>
+            <a href="#" class="m_main_li">극장</a>
+            <ul class="m_sub_li">
+              <li><a href="#">일반상영관</a></li>
+              <li><a href="#">특별상영관</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">영화</a>
+            <ul class="m_sub_li">
+              <li><a href="#">전체영화</a></li>
+              <li><a href="#">Choice영화</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">예매</a>
+            <ul class="m_sub_li">
+              <li><a href="#">빠른예매</a></li>
+              <li><a href="#">상영시간표</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">스토어</a>
+            <ul class="m_sub_li">
+              <li><a href="#">대여서비스</a></li>
+              <li><a href="#">Foodzone</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="m_main_li">서비스</a>
+            <ul class="m_sub_li">
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">제휴할인</a></li>
+              <li><a href="#">자주묻는질문</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="m_info">
+          <span>Drive In Cinema</span>
+          <em>1544 - 0070</em>
+          <ul>
+            <li class="sns01"><a href="#" class="ir_pm">트위터</a></li>
+            <li class="sns02"><a href="#" class="ir_pm">인스타그램</a></li>
+            <li class="sns03"><a href="#" class="ir_pm">페이스북</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- movie_detail -->
+    <section id="movie_detail">
+      <div class="container">
+          <div class="row">
+              <div class="movie_detail">
+                  <div class="base_movie">
+                      <div class="box_img">
+                          <img src="assets/img/poster01.JPG" alt="더 배트맨">
+                          <span class="icon a15 ir_pm">15세이상 관람</span>
+                      </div>
+                      <div class="box_content">
+                          <div class="title">
+                              <strong>더 배트맨</strong>
+                              <em class="round purple">
+                                  <span>현재 상영중</span>
+                              </em>
+                              <p>The Batman</p>
+                          </div>
+                          <div class="score">
+                              <div class="gage">
+                                  <p>관람객 평점 <span class="icon star ir_pm">평점</span><strong>8.4</strong></p>
+                              </div>
+                              <div class="percent">
+                                  <p>예매율<strong>83.4%</strong></p>
+                              </div>
+                          </div>
+                          <div class="spec">
+                              <p>감독 : 맷 리브스 / 배우 : 로버트 패틴슨 ,  폴 다노 ,  조 크라비츠 ,  앤디 서키스 ,  제프리 라이트 ,  콜린 파렐 ,  피터 사스가드 ,  존 터투로 ,  제이미 로슨</p>
+                              <p>장르 : 액션 / 기본 : 15세 이상, 176분, 미국</p>
+                              <p>개봉 : 2022.03.01</p>
+                          </div>
+                          <div class="like">
+                              <a href="#" class="time">
+                                  <i class="fa fa-clock-o" aria-hidden="true"></i>상영시간표
+                              </a>
+                              <a href="#" class="reserve">예매하기</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="base_content">
+                      <div class="content_left">
+                          <ul class="menu">
+                              <li>
+                                  <a href="#">
+                                      <i class="fa fa-hand-o-right" aria-hidden="true"></i>주요정보
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      트레일러
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      스틸컷
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      평점/리뷰
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      상영시간표
+                                  </a>
+                              </li>
+                          </ul>
+                          <div class="sect_story_movie">
+                              <strong>
+                                  영웅이 될 것인가 악당이 될 것인가</br>
+                                  운명을 결정할 선택만이 남았다
+                              </strong></br></br>
+                              <p>지난 2년간 고담시의 어둠 속에서 범법자들을 응징하며 배트맨으로 살아온 브루스 웨인. 알프레드와 제임스 고든 경위의 도움 아래, 도시의 부패한 공직자들과 고위 관료들 사이에서 복수의 화신으로 활약한다. 고담의 시장 선거를 앞두고 고담의 엘리트 집단을 목표로 잔악한 연쇄살인을 저지르는 수수께끼 킬러 리들러가 나타나자, 최고의 탐정 브루스 웨인이 수사에 나서고 남겨진 단서를 풀어가며 캣우먼, 펭귄, 카마인 팔코네, 리들러를 차례대로 만난다.  사이코 범인의 미스터리를 수사하면서 그 모든 증거가 자신을 향한 의도적인 메시지였음을 깨닫고, 리들러에게 농락 당한 배트맨은 광기에 사로잡힌다. 범인의 무자비한 계획을 막고 오랫동안 고담시를 썩게 만든 권력 부패의 고리를 끊어야 하지만,  부모님의 죽음에 얽힌 진실이 밝혀지자 복수와 정의 사이에서 갈등한다.<br><br>
+                              선과 악, 빛과 어둠, 영웅과 악당, 정의와 복수.. 무엇을 선택할 것인가</p>
+                          </div>
+                          <div class="motion">
+                              <ul class="graph">
+                                  <li>
+                                      <strong>성별 예매 분포</strong>
+                                      <div class="pie">
+                                          <div class="woman">여 41.5%</div>
+                                          <div class="man">남 58.5%</div>
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <strong>연령별 예매 분포</strong>
+                                      <div class="chart">
+                                          <span class="age20" data-val='28.7'>28.7</span>
+                                          <span class="age30" data-val='36.7'>36.7</span>
+                                          <span class="age40" data-val='20.6'>20.6</span>
+                                          <span class="age50" data-val='12.1'>12.1</span>
+                                      </div>
+                                      <div class="age">
+                                          <span>20대</span>
+                                          <span>30대</span>
+                                          <span>40대</span>
+                                          <span>50대</span>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="trailer">
+                              <h4>트레일러</h4>
+                              <ul>
+                                  <li>
+                                      <div class="trailer_img">
+                                          <a id="play-video1" class="video-play-button" href="#">
+                                              <span></span>
+                                          </a>
+                                          <div id="video-overlay1" class="video-overlay">
+                                              <a class="video-overlay-close">&times;</a>
+                                          </div>
+                                      </div>
+                                      <div class="box_content">
+                                          <strong class="title"><span class="hd">HD</span>3차 예고편</strong>
+                                          <span>2022.01.21</span>
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <div class="trailer_img">
+                                          <a id="play-video2" class="video-play-button" href="#">
+                                              <span></span>
+                                          </a>
+                                          <div id="video-overlay2" class="video-overlay">
+                                              <a class="video-overlay-close">&times;</a>
+                                          </div>
+                                      </div>
+                                      <div class="box_content">
+                                          <strong class="title"><span class="hd">HD</span>3차 예고편</strong>
+                                          <span>2022.01.21</span>
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <div class="trailer_img">
+                                          <a id="play-video3" class="video-play-button" href="#">
+                                              <span></span>
+                                          </a>
+                                          <div id="video-overlay3" class="video-overlay">
+                                              <a class="video-overlay-close">&times;</a>
+                                          </div>
+                                      </div>
+                                      <div class="box_content">
+                                          <strong class="title"><span class="hd">HD</span>3차 예고편</strong>
+                                          <span>2022.01.21</span>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="persongrade">
+                              <ul>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="content_right">
+                          <div class="cont_ad">
+                              <img src="assets/img/detail_ad01.png" alt="닥터 스트레인지">
+                              <img src="assets/img/detail_ad02.png" alt="닥터 스트레인지">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- //movie_detail -->
+
+    <!-- AD -->
+    <section id="ad">
+      <img src="assets/img/ad_banner.png" />
+    </section>
+    <!-- //AD -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_info">
+            <span
+              ><img src="assets/icons/apple-icon.png" alt="Drive In Car"
+            /></span>
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">제휴/광고/부대사업 문의</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">윤리경영</a></li>
+            </ul>
+            <address>
+              <p>
+                인천광역시 연수구 먼우금로 123, 1층 DIC중앙(주) (인천시,
+                송도사옥)<br /><span class="bar2">대표자명 홍길동</span>
+                개인정보보호 책임자 경영지원실 실장 홍길동<br /><span
+                  class="bar2"
+                  >사업자등록번호 234-23-23454</span
+                >
+                통신판매업신고번호 제 123호
+              </p>
+              <p>
+                Copyright 2014 by DriveInCinemaJoongAng Inc. All right reserved
+              </p>
+            </address>
+            <div class="footer_sns">
+              <ul>
+                <li class="icon s1">
+                  <a href="#"><span class="ir_pm">트위터</span></a>
+                </li>
+                <li class="icon s2">
+                  <a href="#"><span class="ir_pm">페이스북</span></a>
+                </li>
+                <li class="icon s3">
+                  <a href="#"><span class="ir_pm">인스타그램</span></a>
+                </li>
+              </ul>
+              <div class="tel">
+                <a href="#">ARS <em>1544-0070</em></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/movie.js"></script>
+  </body>
+</html>
