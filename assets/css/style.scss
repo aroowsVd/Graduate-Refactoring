@@ -656,46 +656,58 @@ $status: (login, logout, member, mypage);
         height: 100%;
         transition: 0.35s;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1.5em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
 
         &.list1 {
-          background: url(../img/img002.png);
+          background: url(../img/quick01.jpg);
           background-size: cover;
+          filter: grayscale(100%);
 
           &:hover {
-            background: url(../img/img001.png) no-repeat;
-            background-size: cover;
+            filter: grayscale(0);
           }
         }
+
         &.list2 {
-          background: url(../img/img004.png);
+          background: url(../img/quick02.jpg);
           background-size: cover;
+          filter: grayscale(100%);
+
           &:hover {
-            background: url(../img/img003.png) no-repeat;
-            background-size: cover;
+            filter: grayscale(0);
           }
         }
         &.list3 {
-          background: url(../img/img006.png);
+          background: url(../img/quick03.jpg);
           background-size: cover;
+          filter: grayscale(100%);
+
           &:hover {
-            background: url(../img/img005.png) no-repeat;
-            background-size: cover;
+            filter: grayscale(0);
           }
         }
         &.list4 {
-          background: url(../img/img008.png);
+          background: url(../img/quick04.jpg);
           background-size: cover;
+          filter: grayscale(100%);
+
           &:hover {
-            background: url(../img/img007.png) no-repeat;
-            background-size: cover;
+            filter: grayscale(0);
           }
         }
         &.list5 {
-          background: url(../img/img010.png);
+          background: url(../img/quick05.jpg);
           background-size: cover;
+          filter: grayscale(100%);
+
           &:hover {
-            background: url(../img/img009.png) no-repeat;
-            background-size: cover;
+            filter: grayscale(0);
           }
         }
       }
